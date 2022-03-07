@@ -1,0 +1,914 @@
+	<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" class="ancient-ie old-ie no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" class="ancient-ie old-ie no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="old-ie no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="old-ie9 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="text/javascript">
+function createCookie(a,d,b){if(b){var c=new Date;c.setTime(c.getTime()+864E5*b);b="; expires="+c.toGMTString()}else b="";document.cookie=a+"="+d+b+"; path=/"}function readCookie(a){a+="=";for(var d=document.cookie.split(";"),b=0;b<d.length;b++){for(var c=d[b];" "==c.charAt(0);)c=c.substring(1,c.length);if(0==c.indexOf(a))return c.substring(a.length,c.length)}return null}function eraseCookie(a){createCookie(a,"",-1)}
+function areCookiesEnabled(){var a=!1;createCookie("testing","Hello",1);null!=readCookie("testing")&&(a=!0,eraseCookie("testing"));return a}(function(a){var d=readCookie("devicePixelRatio"),b=void 0===a.devicePixelRatio?1:a.devicePixelRatio;areCookiesEnabled()&&null==d&&(createCookie("devicePixelRatio",b,7),1!=b&&a.location.reload(!0))})(window);
+</script>	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://gpldl.com/xmlrpc.php" />
+	<!--[if IE]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta name='robots' content='index, follow, max-video-preview:-1, max-snippet:-1, max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>GPLDL - WordPress GPL Club Membership for free!</title>
+	<meta name="description" content="Become a member at GPLDL and download GPL-licensed Premium WordPress Themes &amp; Plugins and WooCommerce Extensions for free!" />
+	<link rel="canonical" href="https://gpldl.com/memberships/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="GPLDL - WordPress GPL Club Membership for free!" />
+	<meta property="og:description" content="Become a member at GPLDL and download GPL-licensed Premium WordPress Themes &amp; Plugins and WooCommerce Extensions for free!" />
+	<meta property="og:url" content="https://gpldl.com/memberships/" />
+	<meta property="og:site_name" content="GPLDL" />
+	<meta property="article:publisher" content="https://www.facebook.com/gpldlcom" />
+	<meta property="article:modified_time" content="2019-01-02T21:37:46+00:00" />
+	<meta property="og:image" content="https://gpldl.com/wp-content/uploads/gpldl_featured_dark_smaller.gif" />
+	<meta property="og:image:width" content="300" />
+	<meta property="og:image:height" content="300" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@gpldl" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="4 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gpldl.com/#organization","name":"GPLDL","url":"https://gpldl.com/","sameAs":["https://www.facebook.com/gpldlcom","http://www.pinterest.com/gpldl/","https://twitter.com/gpldl"],"logo":{"@type":"ImageObject","@id":"https://gpldl.com/#logo","inLanguage":"en-US","url":"https://gpldl.com/wp-content/uploads/gpldl_logo_300x300_square.gif","contentUrl":"https://gpldl.com/wp-content/uploads/gpldl_logo_300x300_square.gif","width":300,"height":300,"caption":"GPLDL"},"image":{"@id":"https://gpldl.com/#logo"}},{"@type":"WebSite","@id":"https://gpldl.com/#website","url":"https://gpldl.com/","name":"GPLDL","description":"Download the most popular GPL licensed Premium WordPress Themes &amp; Plugins and WooCommerce Extensions for FREE!","publisher":{"@id":"https://gpldl.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://gpldl.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://gpldl.com/memberships/#primaryimage","inLanguage":"en-US","url":"https://gpldl.com/wp-content/uploads/gpldl_featured_dark_smaller.gif","contentUrl":"https://gpldl.com/wp-content/uploads/gpldl_featured_dark_smaller.gif","width":300,"height":300},{"@type":"WebPage","@id":"https://gpldl.com/memberships/#webpage","url":"https://gpldl.com/memberships/","name":"GPLDL - WordPress GPL Club Membership for free!","isPartOf":{"@id":"https://gpldl.com/#website"},"primaryImageOfPage":{"@id":"https://gpldl.com/memberships/#primaryimage"},"datePublished":"2015-01-10T11:48:38+00:00","dateModified":"2019-01-02T21:37:46+00:00","description":"Become a member at GPLDL and download GPL-licensed Premium WordPress Themes & Plugins and WooCommerce Extensions for free!","breadcrumb":{"@id":"https://gpldl.com/memberships/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gpldl.com/memberships/"]}]},{"@type":"BreadcrumbList","@id":"https://gpldl.com/memberships/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gpldl.com/"},{"@type":"ListItem","position":2,"name":"GPLDL Membership &#8211; Download Premium WordPress &#038; WooCommerce for free!"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//gpldl.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="GPLDL &raquo; Feed" href="https://gpldl.com/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/gpldl.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=2d02023148bfc93968e2e5f5a01f6769"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://gpldl.com/wp-includes/css/dist/block-library/style.min.css?ver=2d02023148bfc93968e2e5f5a01f6769' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='bbp-default-css'  href='https://gpldl.com/wp-content/themes/dt-the7/css/bbpress.min.css?ver=2.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='go-pricing-styles-css'  href='https://gpldl.com/wp-content/plugins/go_pricing/assets/css/go_pricing_styles.css?ver=3.3.18' type='text/css' media='all' />
+<link rel='stylesheet' id='table-sorter-custom-css-css'  href='https://gpldl.com/wp-content/plugins/table-sorter/wp-style.css?ver=2d02023148bfc93968e2e5f5a01f6769' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css'  href='https://gpldl.com/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='https://gpldl.com/wp-content/themes/dt-the7/style.css?ver=2d02023148bfc93968e2e5f5a01f6769' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='https://gpldl.com/wp-content/themes/dt-the7-child/style.css?ver=2d02023148bfc93968e2e5f5a01f6769' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-notice-front-css'  href='https://gpldl.com/wp-content/plugins/cookie-notice/includes/../css/front.min.css?ver=2d02023148bfc93968e2e5f5a01f6769' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://gpldl.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.14' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://gpldl.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-web-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%7COswald&#038;ver=2d02023148bfc93968e2e5f5a01f6769' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-main-css'  href='https://gpldl.com/wp-content/themes/dt-the7/css/main.min.css?ver=1.0.0' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='dt-old-ie-css'  href='https://gpldl.com/wp-content/themes/dt-the7/css/old-ie.min.css?ver=1.0.0' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='dt-awsome-fonts-css'  href='https://gpldl.com/wp-content/themes/dt-the7/css/font-awesome.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-fontello-css'  href='https://gpldl.com/wp-content/themes/dt-the7/css/fontello/css/fontello.css?ver=1.0.0' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='dt-custom-old-ie.less-css'  href='https://gpldl.com/wp-content/uploads/wp-less/dt-the7/css/custom-old-ie-f786509975.css?ver=1.0.0' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='dt-main.less-css'  href='https://gpldl.com/wp-content/uploads/wp-less/dt-the7/css/main-f786509975.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-custom.less-css'  href='https://gpldl.com/wp-content/uploads/wp-less/dt-the7/css/custom-f786509975.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-media.less-css'  href='https://gpldl.com/wp-content/uploads/wp-less/dt-the7/css/media-f786509975.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bb-press.less-css'  href='https://gpldl.com/wp-content/uploads/wp-less/dt-the7/css/bb-press-f786509975.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://gpldl.com/wp-content/themes/dt-the7-child/style.css?ver=1.0.0' type='text/css' media='all' />
+<style id='style-inline-css' type='text/css'>
+body #page .menu-item-13100,
+body #page  .menu-item-13093 { 
+  display: inline-block; 
+}
+body #page  .menu-item-13105,
+body #page  .menu-item-13109 { 
+  display: none; 
+}
+
+body.logged-in #page  .menu-item-13100,
+body.logged-in #page  .menu-item-13093 { 
+  display: none; 
+}
+body.logged-in #page  .menu-item-13105,
+body.logged-in #page  .menu-item-13109 { 
+  display: inline-block; 
+}
+h6 {
+  font: 16px/23px "Open Sans",Helvetica,Arial,Verdana,sans-serif; 
+}
+.content table, .content td, .content th {
+border-color:#ffffff;
+}
+.recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th {
+line-height: 6px;
+}
+#s2member-pro-paypal-checkout-form-submission-section-title,
+#s2member-pro-paypal-checkout-form-registration-section-title,
+#s2member-pro-paypal-checkout-form-billing-method-section,
+#s2member-pro-paypal-checkout-form-billing-address-section,
+#s2member-pro-paypal-checkout-form-password-div {
+    display: none;
+}
+
+#affiliates-registration-form-first-name,
+#affiliates-registration-form-first-name-label,
+#affiliates-registration-form-last-name,
+#affiliates-registration-form-last-name-label,
+#affiliates-registration-form-user-login,
+#affiliates-registration-form-user-login-label,
+#affiliates-registration-form-email,
+#affiliates-registration-form-email-label,
+#affiliates-registration-form-url,
+#affiliates-registration-form-url-label {
+    display: none;
+}
+html .affiliates-registration .required {
+    background: inherit;
+    padding-left: 0;
+}
+#affiliates-registration-form-email-label:after,
+#affiliates-registration-form-user-login-label:after {
+	font-size: 78%;
+	content: "  (cannot be changed)";
+}
+#affiliates-registration-form > div:nth-child(1) > input:nth-child(16){
+    font: 16px/46px "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#ws-plugin--s2member-profile-submit {
+    font: 16px/46px "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#affiliates-registration-form > div:nth-child(1) > input:nth-child(16):hover,
+#ws-plugin--s2member-profile-submit:hover {
+    background-color: #9f9f9f;
+}
+.ws-plugin--s2member-profile-field-divider-section {
+  display: none;
+}
+#ws-plugin--s2member-profile-password-strength {
+  padding: 7px 15px;
+  border: 1px solid #E0E0E0;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+#tablepress-1 {
+  border-color:  #ddd;
+}
+#tablepress-1 .odd td{
+  background-color:  transparent;
+}
+div.wf-cell h1 {
+  font: 22px/26px "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+}
+
+.benefits-grid .btn-link {
+  margin-right: 0;
+}
+#bottom-bar {
+  display: none;
+}
+#top-bar .text-area {
+  width: 100%;
+  text-align: center;
+}
+.blog-media .rollover {
+  max-width: 218px;
+}
+.migla-panel h2{
+    -x-system-font: none;
+    color: #3a3a3a;
+    font-family: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 22px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    line-height: 26px;
+    text-transform: none;
+    color: #828282;
+}
+#page .bootstrap-wrapper .input-group-icon .input-group-addon:last-child span.icon {
+    color: #828282  !important;
+}
+#page .sp-main-div-horizontal form p {
+    margin-right: 15px;
+}
+div.sp-main-div p {
+    max-width: 260px;
+}
+#user_login-2,
+#user_pass-2,
+#lost_user_login-2 {
+  width: 100%;
+}
+#main-nav > li.menu-frame-on:hover > a {
+ color: #888;
+}
+.s2member-pro-paypal-submit {
+  color: white;
+}
+#recaptcha_privacy > a {
+color: #888;
+}
+#recaptcha_challenge_field_holder {
+border-width: 0;
+}
+#recaptcha_area{
+border-radius: 7px !important;
+background-color: #ffffff;
+}
+.recaptcha_image_cell {
+background-color: transparent !important;
+}
+div.s2member-pro-paypal-form-custom-fields-section-title {
+  display:none;
+}
+
+div.rc-anchor-light {
+    border: 0;
+}
+div.rc-anchor {
+    border-radius: 5px;
+    box-shadow: none;
+}
+body.page #bbpress-forums,
+body.page #bbpress-forums a, 
+body.page #bbpress-forums a:hover,
+body.page #bbpress-forums li.bbp-header, 
+body.page #bbpress-forums li.bbp-body, 
+body.page #bbpress-forums li.bbp-footer,
+body.page #bbpress-forums li.bbp-header a, 
+body.page #bbpress-forums li.bbp-body a,  
+body.page #bbpress-forums li.bbp-footer a,
+body.page #bbpress-forums li.bbp-header a:hover, 
+body.page #bbpress-forums li.bbp-body a:hover,
+body.page #bbpress-forums li.bbp-footer a:hover,
+#bbpress-forums li.bbp-header, 
+#bbpress-forums li.bbp-body, 
+#bbpress-forums li.bbp-footer,
+#bbpress-forums li.bbp-header a, 
+#bbpress-forums li.bbp-body a,  
+#bbpress-forums li.bbp-footer a,
+#bbpress-forums li.bbp-header a:hover, 
+#bbpress-forums li.bbp-body a:hover,
+#bbpress-forums li.bbp-footer a:hover
+{
+  color: #3A3A3A;
+}
+.list-divider li {
+    padding-bottom: 1px  !important;
+}
+div.s2member-pro-paypal-form-section {
+    margin-top: 10px  !important;
+}
+#s2member-pro-stripe-checkout-form-options-section-title,
+#s2member-pro-stripe-checkout-form-submission-section-title,
+#s2member-pro-stripe-checkout-form-billing-method-section-title,
+#s2member-pro-stripe-checkout-form-registration-section-title,
+#s2member-pro-stripe-checkout-form-description-div {
+    display: none;
+}
+#s2member-pro-stripe-checkout-form-submit-div {
+    float: left;
+}
+#s2member-pro-stripe-checkout-options {
+    color: black;
+}
+.page-id-17940 #benefits-grid-1 .wf-cell {
+margin-top: 30px;
+width: 100% !important;
+}
+</style>
+<link rel='stylesheet' id='jetpack_css-css'  href='https://gpldl.com/wp-content/plugins/jetpack/css/jetpack.css?ver=8.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ws-plugin--s2member-css'  href='https://gpldl.com/wp-content/plugins/s2member/s2member-o.php?ws_plugin__s2member_css=1&#038;qcABC=1&#038;ver=210526-210526-2460204663' type='text/css' media='all' />
+<link rel='stylesheet' id='wppb_stylesheet-css'  href='https://gpldl.com/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=3.5.0' type='text/css' media='all' />
+<script type='text/javascript' id='gw-tweenmax-js-before'>
+var oldGS=window.GreenSockGlobals,oldGSQueue=window._gsQueue,oldGSDefine=window._gsDefine;window._gsDefine=null;delete(window._gsDefine);var gwGS=window.GreenSockGlobals={};
+</script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js' id='gw-tweenmax-js'></script>
+<script type='text/javascript' id='gw-tweenmax-js-after'>
+try{window.GreenSockGlobals=null;window._gsQueue=null;window._gsDefine=null;delete(window.GreenSockGlobals);delete(window._gsQueue);delete(window._gsDefine);window.GreenSockGlobals=oldGS;window._gsQueue=oldGSQueue;window._gsDefine=oldGSDefine;}catch(e){}
+</script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/table-sorter/jquery.tablesorter.min.js?ver=2d02023148bfc93968e2e5f5a01f6769' id='table-sorter-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/table-sorter/jquery.metadata.js?ver=2.2' id='table-sorter-metadata-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/table-sorter/wp-script.js?ver=2.2' id='table-sorter-custom-js-js'></script>
+<script type='application/json' id='wpp-json'>
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/gpldl.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":15336,"token":"cfb0ae1c8a","lang":0,"debug":0}
+</script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.3.6' id='wpp-js-js'></script>
+<script type='text/javascript' id='cookie-notice-front-js-extra'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/gpldl.com\/wp-admin\/admin-ajax.php","nonce":"292df56149","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"604800","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"0","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script async type='text/javascript' src='https://gpldl.com/wp-content/plugins/cookie-notice/includes/../js/front.min.js?ver=2.1.0' id='cookie-notice-front-js'></script>
+<script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-56306130-1' id='google_gtagjs-js' async></script>
+<script type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["gpldl.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-56306130-1", {"anonymize_ip":true});
+</script>
+<script type='text/javascript' id='dt-above-fold-js-extra'>
+/* <![CDATA[ */
+var dtLocal = {"passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading..."},"postID":"15336","ajaxurl":"https:\/\/gpldl.com\/wp-admin\/admin-ajax.php","contactNonce":"79aee35aa9","ajaxNonce":"2dab3e686b","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"on","lazyLoading":false,"accentColor":{"mode":"solid","color":"#888888"},"mobileHeader":{"firstSwitchPoint":900},"content":{"responsivenessTreshold":970,"textColor":"#888888","headerColor":"#3a3a3a"},"stripes":{"stripe1":{"textColor":"#888888","headerColor":"#888888"},"stripe2":{"textColor":"#f7f7f7","headerColor":"#000000"},"stripe3":{"textColor":"#888888","headerColor":"#888888"}}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/themes/dt-the7/js/above-the-fold.min.js?ver=1.0.0' id='dt-above-fold-js'></script>
+<link rel="https://api.w.org/" href="https://gpldl.com/wp-json/" /><link rel="alternate" type="application/json" href="https://gpldl.com/wp-json/wp/v2/pages/15336" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gpldl.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://gpldl.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://gpldl.com/?p=15336' />
+<link rel="alternate" type="application/json+oembed" href="https://gpldl.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgpldl.com%2Fmemberships%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://gpldl.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgpldl.com%2Fmemberships%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.38.0" /><script type="text/javascript">var ws_plugin__s2member_skip_all_file_confirmations = true;</script>        <style>
+            @-webkit-keyframes bgslide {
+                from {
+                    background-position-x: 0;
+                }
+                to {
+                    background-position-x: -200%;
+                }
+            }
+
+            @keyframes bgslide {
+                    from {
+                        background-position-x: 0;
+                    }
+                    to {
+                        background-position-x: -200%;
+                    }
+            }
+
+            .wpp-widget-placeholder {
+                margin: 0 auto;
+                width: 60px;
+                height: 3px;
+                background: #dd3737;
+                background: -webkit-gradient(linear, left top, right top, from(#dd3737), color-stop(10%, #571313), to(#dd3737));
+                background: linear-gradient(90deg, #dd3737 0%, #571313 10%, #dd3737 100%);
+                background-size: 200% auto;
+                border-radius: 3px;
+                -webkit-animation: bgslide 1s infinite linear;
+                animation: bgslide 1s infinite linear;
+            }
+        </style>
+        
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+		<script type="text/javascript">
+			dtGlobals.logoEnabled = 0;
+			dtGlobals.logoURL = '';
+			dtGlobals.logoW = '0';
+			dtGlobals.logoH = '0';
+			smartMenu = 1;
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><!-- Google Tag Manager added by Site Kit -->
+<script>
+( function( w, d, s, l, i ) {
+	w[l] = w[l] || [];
+	w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+	var f = d.getElementsByTagName( s )[0],
+		j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+	j.async = true;
+	j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+	f.parentNode.insertBefore( j, f );
+} )( window, document, 'script', 'dataLayer', 'GTM-KHXR6VB' );
+</script>
+<!-- End Google Tag Manager -->
+		<link rel="icon" href="https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x12001-54b25ce2v1_site_icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x12001-54b25ce2v1_site_icon-256x256.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x12001-54b25ce2v1_site_icon-256x256.png" />
+<meta name="msapplication-TileImage" content="https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x12001-54b25ce2v1_site_icon.png" />
+		<style type="text/css" id="wp-custom-css">
+			:focus {
+    outline: -webkit-focus-ring-color auto 0	;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.searchform-s {
+	width:100%;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}		</style>
+		<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1428848218837{border-top-width: 100px !important;border-right-width: 100px !important;border-bottom-width: 100px !important;border-left-width: 100px !important;background-position: 0 0 !important;background-repeat: repeat !important;}.vc_custom_1464541975690{margin-right: 22px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="page-template-default page page-id-15336 btn-flat style-minimal boxes-transparent-bg light-icons phantom-fade cookies-not-set wpb-js-composer js-comp-ver-6.6.0.1 vc_responsive">
+
+
+
+<div id="page">
+
+
+<!-- left, center, classic, side -->
+
+		<!-- !Header -->
+	<header id="header" class="show-device-logo show-mobile-logo logo-left" role="banner"><!-- class="overlap"; class="logo-left", class="logo-center", class="logo-classic" -->
+
+				<!-- !Top-bar -->
+		<div id="top-bar" role="complementary" class="text-small solid-bg top-bar-disabled">
+			<div class="wf-wrap">
+				<div class="wf-container-top">
+					<div class="wf-table wf-mobile-collapsed">
+
+						
+						<div class=" wf-td"><div class="text-area"><p>Welcome to GPLDL - we are still beta - please report any bugs via the contact form.</p>
+</div></div>
+						
+					</div><!-- .wf-table -->
+				</div><!-- .wf-container-top -->
+			</div><!-- .wf-wrap -->
+		</div><!-- #top-bar -->
+		<div class="wf-wrap ">
+
+			<div class="wf-table">
+
+								<!-- !- Branding -->
+				<div id="branding" class="wf-td">
+
+					<a href="https://gpldl.com/"><img class="preload-me" src="https://gpldl.com/wp-content/uploads/gpldl_logo_248x155.png" width="248" height="155"   alt="GPLDL" /><img class="mobile-logo preload-me" src="https://gpldl.com/wp-content/uploads/GPLDL_Logo_Blueprint-1.0-mobile-2x.jpg" width="183" height="82"   alt="GPLDL" /></a>
+					<div id="site-title" class="assistive-text">GPLDL</div>
+					<div id="site-description" class="assistive-text">Download the most popular GPL licensed Premium WordPress Themes &amp; Plugins and WooCommerce Extensions for FREE!</div>
+				</div>
+						<!-- !- Navigation -->
+		<nav id="navigation" class="wf-td">
+			<ul id="main-nav" class="fancy-rollovers wf-mobile-hidden">
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13854 first has-children no-link menu-frame-on level-arrows-on"><a href="https://gpldl.com/blog/" onclick="return false;"><span>Blog</span></a><div class="sub-nav"><ul>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-14085 first level-arrows-on"><a href="https://gpldl.com/blog/"><span>Blog Articles</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-14076 level-arrows-on"><a href="https://gpldl.com/latest-updates-additions/"><span>Latest Updates &#038; Additions</span></a></li> </ul></div></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13734 has-children no-link menu-frame-on level-arrows-on"><a href="https://gpldl.com/repository/" onclick="return false;"><span>Repository</span></a><div class="sub-nav"><ul>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-14086 first level-arrows-on"><a href="https://gpldl.com/repository/"><span>Full Repository</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-15504 level-arrows-on"><a href="https://gpldl.com/repository/premium-wordpress-themes/"><span>Premium WordPress Themes</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-15503 level-arrows-on"><a href="https://gpldl.com/repository/premium-wordpress-plugins/"><span>Premium WordPress Plugins</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-15501 level-arrows-on"><a href="https://gpldl.com/repository/premium-woocommerce-extensions/"><span>Premium WooCommerce Extensions</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-18123 level-arrows-on"><a href="https://gpldl.com/repository/special-gifts/"><span>Special Gifts for Premium Members</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-14087 level-arrows-on"><a href="https://gpldl.com/tutorials/"><span>Tutorials</span></a></li> </ul></div></li> 
+<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-15415 menu-frame-on level-arrows-on"><a href="/forum/"><span>Forum</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15336 current_page_item menu-item-15397 act menu-frame-on level-arrows-on"><a href="https://gpldl.com/memberships/"><span>Free Membership</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19735 menu-frame-on level-arrows-on"><a href="https://gpldl.com/donations/"><span>Donations</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-13105 menu-frame-on level-arrows-on"><a href="https://gpldl.com/my-gpldl-account/"><span>My GPLDL Account</span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_itemact menu-frame-on"><a href="/sign-in">Sign In</a></li>
+</ul>
+				<a href="#show-menu" rel="nofollow" id="mobile-menu" class="accent-bg">
+					<span class="menu-open">Menu</span>
+					<span class="menu-back">back</span>
+					<span class="wf-phone-visible">&nbsp;</span>
+				</a>
+
+			
+			
+		</nav>
+
+			
+			</div><!-- .wf-table -->
+		</div><!-- .wf-wrap -->
+
+	</header><!-- #masthead -->
+
+	
+		<div class="page-title title-left transparent-bg breadcrumbs-off" style="min-height: 100px;">
+			<div class="wf-wrap">
+				<div class="wf-container-title">
+					<div class="wf-table" style="height: 100px;">
+
+						<div class="wf-td hgroup"><h1 class="h3-size">GPLDL Membership &#8211; Download Premium WordPress &#038; WooCommerce for free!</h1></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	
+	<div id="main" class="sidebar-none"><!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
+
+		
+		<div class="main-gradient"></div>
+		<div class="wf-wrap">
+			<div class="wf-container-main">
+
+				
+	
+		
+			<div id="content" class="content" role="main">
+
+			
+					
+					<div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1428848218837">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: center;"><strong>Get your free GPLDL Membership now and s</strong><strong>tart downloading Premium WordPress Themes &amp; Plugins and WooCommerce Extensions &amp; Themes right away!</strong></h2>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="stripe stripe-style-1 stripe-transparent-bg" style="background-color: rgba(102,102,102,0.04);background-position: top;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;padding-top: 40px;padding-bottom: 40px;margin-top: 0px;margin-bottom: 0px"><div class="vc_row wpb_row wf-container" style=""><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1464541975690">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img width="1200" height="1200" src="https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x1200.jpg" class="vc_single_image-img attachment-full" alt="GPLDL Logo Press Kit High Resolution" loading="lazy" srcset="https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x1200.jpg 1200w, https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x1200-150x150.jpg 150w, https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x1200-300x300.jpg 300w, https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x1200-1024x1024.jpg 1024w, https://gpldl.com/wp-content/uploads/GPLDL_Logo_1200x1200-600x600.jpg 600w" sizes="(max-width: 1200px) 100vw, 1200px" /></div>
+		</figure>
+	</div>
+<div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3><span style="color: #333333;">The Free GPLDL Membership</span></h3>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 24px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Get full access to the <a href="/repository/">GPLDL WordPress Repository</a> to download from hundreds of Premium WordPress Items worth thousands of US$ from these categories:</p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div><div class="standard-arrow list-divider"><ul>
+<li>
+<h4><a title="WordPress Themes" href="/repository/premium-wordpress-themes/">Premium WordPress Themes</a></h4>
+</li>
+<li>
+<h4><a title="WordPress Plugins" href="/catalog/premium-wordpress-plugins/">Premium WordPress Plugins</a></h4>
+</li>
+<li>
+<h4><a title="WooCommerce Extensions" href="/repository/premium-woocommerce-extensions/">Premium WooCommerce Extensions</a></h4>
+</li>
+</ul>
+</div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>The GPLDL membership also includes future updates and newly added items when they become available.</p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3><span style="color: #333333;">Too good to be true?</span></h3>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 24px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Just in case you are wondering where the caveat is: There is none!</p>
+<p>We love to share free software - find out more in '<a title="About GPLDL" href="/about-gpldl/">About GPLDL</a>'.</p>
+
+		</div>
+	</div>
+</div></div></div></div></div><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3>Membership Benefits</h3>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div><section id="benefits-grid-1" class="benefits-grid wf-container benefits-style-two icons-bg light-bg light-hover-bg light-icon-color light-icon-hover-color" data-width="180px" data-columns="3"><style type="text/css">#benefits-grid-1.icons-bg .benefits-grid-ico { height: 70px; line-height: 70px; width: 70px; }#benefits-grid-1.icons-bg .benefits-grid-ico > .fa { font-size: 36px; line-height: 70px; }</style><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-database"></i>
+</span></div><div class="wf-td benefits-inner"><h4>Largest Repository</h4><p>Get all 1215 GPL-licensed Premium WordPress Items from our repository!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-money"></i></span></div><div class="wf-td benefits-inner"><h4>Huge Savings</h4><p>Enjoy downloading WordPress Items worth thousands of dollars for free!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-thumbs-o-up"></i></span></div><div class="wf-td benefits-inner"><h4>Most Popular</h4><p>A selection of the most Popular WordPress Items on the Web - essential for any WordPress Site!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-files-o"></i>
+</span></div><div class="wf-td benefits-inner"><h4>True Originals</h4><p>All WordPress items are true originals - just as they were released by the developers - no nulled scripts!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-lock"></i></span></div><div class="wf-td benefits-inner"><h4>Safe, Secure &#038; Reliable</h4><p>Safe, Secure and reliable downloads of all WordPress Items right from our website!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-users"></i>
+</span></div><div class="wf-td benefits-inner"><h4>Free Membership</h4><p>Get a free GPLDL Club membership to download!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-rocket"></i></span></div><div class="wf-td benefits-inner"><h4>Update notifications</h4><p>We notify you when updates are available to keep your WordPress site current and safe!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-line-chart"></i>
+</span></div><div class="wf-td benefits-inner"><h4>Donations backed</h4><p>To maintain, further grow and keep GPLDL free for everyone, we need your donations!</p>
+</div></div></div></div></div><div class="wf-cell"><div><div class="text-big"><div class="wf-table"><div class="wf-td"><span class="benefits-grid-ico"><i class="fa fa-copyright"></i></span></div><div class="wf-td benefits-inner"><h4>Perfectly legal</h4><p>All WordPress items are licensed under the GPL (General Public License)!</p>
+</div></div></div></div></div></section><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="stripe stripe-style-3 stripe-transparent-bg" style="background-position: top;background-repeat: no-repeat;background-attachment: scroll;background-size: auto;padding-top: 0px;padding-bottom: 0px;margin-top: 0px;margin-bottom: 0px"><div class="vc_row wpb_row wf-container" style=""><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div class="gap" style="line-height: 32px; height: 32px;"></div>
+<h3><span style="color: #333333;">Registration</span></h3>
+<div id="s2p-form"></div><!-- This is for hash anchors; do NOT remove please. -->
+
+<form id="s2member-pro-paypal-registration-form" class="s2member-pro-paypal-form s2member-pro-paypal-registration-form" method="post" action="/memberships/?_s2member_vars=file..ccap..special_gifts..file..access-s2member-ccap-special_gifts%2Faitthemes_club_anchor%2F2.0.7%2Fanchor-2.0.7.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPS9hY2Nlc3MtczJtZW1iZXItY2NhcC1zcGVjaWFsX2dpZnRzL2FpdHRoZW1lc19jbHViX2FuY2hvci8yLjAuNy9hbmNob3ItMi4wLjcuemlw&amp;_s2member_sig=1628860687-c9f3becffb4c90dd6a7e186ddf82bbff">
+
+	<!-- Response Section (this is auto-filled after form submission). -->
+	<div id="s2member-pro-paypal-registration-form-response-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-response-section s2member-pro-paypal-registration-form-response-section">
+		<div id="s2member-pro-paypal-registration-form-response-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-response-div s2member-pro-paypal-registration-form-response-div">
+			
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<!-- Options Section (this is filled by Shortcode options; when/if specified). -->
+	<div id="s2member-pro-paypal-registration-form-options-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-options-section s2member-pro-paypal-registration-form-options-section">
+		<div id="s2member-pro-paypal-registration-form-options-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-options-section-title s2member-pro-paypal-registration-form-options-section-title">
+			Registration Options		</div>
+		<div id="s2member-pro-paypal-registration-form-options-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-options-div s2member-pro-paypal-registration-form-options-div">
+			<select name="s2p-option" id="s2member-pro-paypal-registration-options" class="s2member-pro-paypal-options s2member-pro-paypal-registration-options form-control" tabindex="-1">
+				
+			</select>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<!-- Registration Description (this is the desc="" attribute from your Shortcode). -->
+	<div id="s2member-pro-paypal-registration-form-description-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-description-section s2member-pro-paypal-registration-form-description-section">
+		<div id="s2member-pro-paypal-registration-form-description-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-description-div s2member-pro-paypal-registration-form-description-div">
+			GPLDL Free Membership
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<!-- Registration Details (Name, Email, Username, Password). -->
+	<!-- Name fields will be hidden automatically when/if your Registration/Profile Field options dictate this behavior. -->
+	<div id="s2member-pro-paypal-registration-form-registration-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-registration-section s2member-pro-paypal-registration-form-registration-section">
+		<div id="s2member-pro-paypal-registration-form-registration-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-registration-section-title s2member-pro-paypal-registration-form-registration-section-title">
+			Create Profile		</div>
+		<div id="s2member-pro-paypal-registration-form-first-name-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-first-name-div s2member-pro-paypal-registration-form-first-name-div">
+			<label for="s2member-pro-paypal-registration-first-name" id="s2member-pro-paypal-registration-form-first-name-label" class="s2member-pro-paypal-form-first-name-label s2member-pro-paypal-registration-form-first-name-label">
+				<span>First Name *</span><br />
+				<input type="text" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[first_name]" id="s2member-pro-paypal-registration-first-name" class="s2member-pro-paypal-first-name s2member-pro-paypal-registration-first-name form-control" value="" tabindex="10" />
+			</label>
+		</div>
+		<div id="s2member-pro-paypal-registration-form-last-name-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-last-name-div s2member-pro-paypal-registration-form-last-name-div">
+			<label for="s2member-pro-paypal-registration-last-name" id="s2member-pro-paypal-registration-form-last-name-label" class="s2member-pro-paypal-form-last-name-label s2member-pro-paypal-registration-form-last-name-label">
+				<span>Last Name *</span><br />
+				<input type="text" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[last_name]" id="s2member-pro-paypal-registration-last-name" class="s2member-pro-paypal-last-name s2member-pro-paypal-registration-last-name form-control" value="" tabindex="20" />
+			</label>
+		</div>
+		<div id="s2member-pro-paypal-registration-form-email-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-email-div s2member-pro-paypal-registration-form-email-div">
+			<label for="s2member-pro-paypal-registration-email" id="s2member-pro-paypal-registration-form-email-label" class="s2member-pro-paypal-form-email-label s2member-pro-paypal-registration-form-email-label">
+				<span>Email Address *</span><br />
+				<input type="email" aria-required="true" data-expected="email" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[email]" id="s2member-pro-paypal-registration-email" class="s2member-pro-paypal-email s2member-pro-paypal-registration-email form-control" value="" tabindex="30" />
+			</label>
+		</div>
+		<div id="s2member-pro-paypal-registration-form-username-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-username-div s2member-pro-paypal-registration-form-username-div">
+			<label for="s2member-pro-paypal-registration-username" id="s2member-pro-paypal-registration-form-username-label" class="s2member-pro-paypal-form-username-label s2member-pro-paypal-registration-form-username-label">
+				<span>Username (lowercase letters and/or numbers) *</span><br />
+				<input type="text" aria-required="true" maxlength="60" autocomplete="off" name="s2member_pro_paypal_registration[username]" id="s2member-pro-paypal-registration-username" class="s2member-pro-paypal-username s2member-pro-paypal-registration-username form-control" value="" tabindex="40" />
+			</label>
+		</div>
+		<div id="s2member-pro-paypal-registration-form-password-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-password-div s2member-pro-paypal-registration-form-password-div">
+			<label for="s2member-pro-paypal-registration-password1" id="s2member-pro-paypal-registration-form-password-label" class="s2member-pro-paypal-form-password-label s2member-pro-paypal-registration-form-password-label">
+				<span>Password (type this twice please) *</span><br />
+				<input type="password" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[password1]" id="s2member-pro-paypal-registration-password1" class="s2member-pro-paypal-password1 s2member-pro-paypal-registration-password1 form-control" value="" tabindex="50" />
+			</label>
+			<input type="password" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[password2]" id="s2member-pro-paypal-registration-password2" class="s2member-pro-paypal-password2 s2member-pro-paypal-registration-password2 form-control" value="" tabindex="60" />
+			<div id="s2member-pro-paypal-registration-form-password-strength" class="ws-plugin--s2member-password-strength s2member-pro-paypal-form-password-strength s2member-pro-paypal-registration-form-password-strength"><em>password strength indicator</em></div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<!-- Custom Fields (Custom Registration/Profile Fields will appear here, when/if they've been configured). -->
+	<div id="s2member-pro-paypal-registration-form-custom-fields-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-custom-fields-section s2member-pro-paypal-registration-form-custom-fields-section">
+<div id="s2member-pro-paypal-registration-form-custom-fields-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-custom-fields-section-title s2member-pro-paypal-registration-form-custom-fields-section-title">
+Additional Info
+</div>
+<div id="s2member-pro-paypal-registration-form-custom-reg-field-country-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-country-div s2member-pro-paypal-registration-form-custom-reg-field-country-div">
+<label for="s2member-pro-paypal-registration-custom-reg-field-country" id="s2member-pro-paypal-registration-form-custom-reg-field-country-label" class="s2member-pro-paypal-form-custom-reg-field-country-label s2member-pro-paypal-registration-form-custom-reg-field-country-label">
+<span>Country *</span></label><br />
+<select name="s2member_pro_paypal_registration[custom_fields][country]" id="s2member-pro-paypal-registration-custom-reg-field-country" aria-required="true" tabindex="100" class="s2member-pro-paypal-custom-reg-field-country s2member-pro-paypal-registration-custom-reg-field-country form-control"><option value="Afghanistan">Afghanistan</option><option value="Åland Islands">Åland Islands</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Andorra">Andorra</option><option value="Angola">Angola</option><option value="Anguilla">Anguilla</option><option value="Antarctica">Antarctica</option><option value="Antigua And Barbuda">Antigua And Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Aruba">Aruba</option><option value="Ascension Island">Ascension Island</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia And Herzegovina">Bosnia And Herzegovina</option><option value="Botswana">Botswana</option><option value="Bouvet Island">Bouvet Island</option><option value="Brazil">Brazil</option><option value="British Indian Ocean Territory">British Indian Ocean Territory</option><option value="British Virgin Islands">British Virgin Islands</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burma">Burma</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Canary Islands">Canary Islands</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Christmas Island">Christmas Island</option><option value="Cocos (keeling) Islands">Cocos (keeling) Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo">Congo</option><option value="Congo, The Democratic Republic Of The">Congo, The Democratic Republic Of The</option><option value="Cook Islands">Cook Islands</option><option value="Costa Rica">Costa Rica</option><option value="CÔte D&#039;ivoire">CÔte D'ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Diego Garcia">Diego Garcia</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="East Timor">East Timor</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="European Union">European Union</option><option value="Falkland Islands (malvinas)">Falkland Islands (malvinas)</option><option value="Faroe Islands">Faroe Islands</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Guiana">French Guiana</option><option value="French Polynesia">French Polynesia</option><option value="French Southern Territories">French Southern Territories</option><option value="Gabon">Gabon</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Gibraltar">Gibraltar</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Guadeloupe">Guadeloupe</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guernsey">Guernsey</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Heard Island And Mcdonald Islands">Heard Island And Mcdonald Islands</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Isle Of Man">Isle Of Man</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jersey">Jersey</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Lao People&#039;s Democratic Republic">Lao People's Democratic Republic</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macao">Macao</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Martinique">Martinique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mayotte">Mayotte</option><option value="Mexico">Mexico</option><option value="Micronesia, Federated States Of">Micronesia, Federated States Of</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montenegro">Montenegro</option><option value="Montserrat">Montserrat</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="Netherlands Antilles">Netherlands Antilles</option><option value="New Caledonia">New Caledonia</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Niue">Niue</option><option value="Norfolk Island">Norfolk Island</option><option value="North Korea">North Korea</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Pitcairn">Pitcairn</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Puerto Rico">Puerto Rico</option><option value="Qatar">Qatar</option><option value="Republic of Macedonia">Republic of Macedonia</option><option value="RÉunion">RÉunion</option><option value="Romania">Romania</option><option value="Russian Federation">Russian Federation</option><option value="Rwanda">Rwanda</option><option value="Saint Helena">Saint Helena</option><option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome And Principe">Sao Tome And Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Saudi–Iraqi neutral zone">Saudi–Iraqi neutral zone</option><option value="Senegal">Senegal</option><option value="Serbia">Serbia</option><option value="Serbien und Montenegro">Serbien und Montenegro</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="South Georgia And The South Sandwich Islands">South Georgia And The South Sandwich Islands</option><option value="South Korea">South Korea</option><option value="Soviet Union">Soviet Union</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Svalbard And Jan Mayen">Svalbard And Jan Mayen</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syrian Arab Republic">Syrian Arab Republic</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania, United Republic Of">Tanzania, United Republic Of</option><option value="Thailand">Thailand</option><option value="The Gambia">The Gambia</option><option value="Togo">Togo</option><option value="Tokelau">Tokelau</option><option value="Tonga">Tonga</option><option value="Trinidad And Tobago">Trinidad And Tobago</option><option value="Tristan da Cunha">Tristan da Cunha</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Turks And Caicos Islands">Turks And Caicos Islands</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States" selected="selected">United States</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Vatican City">Vatican City</option><option value="Venezuela">Venezuela</option><option value="Viet Nam">Viet Nam</option><option value="Virgin Islands, U.s.">Virgin Islands, U.s.</option><option value="Wallis And Futuna">Wallis And Futuna</option><option value="Western Sahara">Western Sahara</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select></div>
+</div>
+
+
+	<!-- Captcha ( A reCaptcha section, with a required security code will appear here; if captcha="1" ). -->
+	<div id="s2member-pro-paypal-registration-form-captcha-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-captcha-section s2member-pro-paypal-registration-form-captcha-section">
+<div id="s2member-pro-paypal-registration-form-captcha-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-captcha-section-title s2member-pro-paypal-registration-form-captcha-section-title">
+Security Verification
+</div>
+<div id="s2member-pro-paypal-registration-form-captcha-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-captcha-div s2member-pro-paypal-registration-form-captcha-div">
+<label id="s2member-pro-paypal-registration-form-captcha-label" class="s2member-pro-paypal-form-captcha-label s2member-pro-paypal-registration-form-captcha-label">
+<div class="g-recaptcha" data-sitekey="6LcAV4YUAAAAACkPyQYzQFTsuz0cIqXTnlF7PCEa" data-size="normal" data-theme="light" data-tabindex="200"></div><script src="https://www.google.com/recaptcha/api.js"></script>
+</label>
+</div>
+</div>
+
+
+	<!-- Complete Registration (this holds the submit button, and also some dynamic hidden input variables). -->
+	<div id="s2member-pro-paypal-registration-form-submission-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-submission-section s2member-pro-paypal-registration-form-submission-section">
+		<div id="s2member-pro-paypal-registration-form-submission-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-submission-section-title s2member-pro-paypal-registration-form-submission-section-title">
+			Complete Registration		</div>
+		 <!-- s2Member will fill this when/if there are list servers integrated, and the Opt-In Box is turned on. -->
+		<div id="s2member-pro-paypal-registration-form-submit-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-submit-div s2member-pro-paypal-registration-form-submit-div">
+			<input type="hidden" name="s2member_pro_paypal_registration[nonce]" id="s2member-pro-paypal-registration-nonce" value="9104d78c72" /><input type="hidden" id="s2member-pro-paypal-registration-password-not-required-or-not-possible" value="1" /><input type="hidden" name="s2member_pro_paypal_registration[attr]" id="s2member-pro-paypal-registration-attr" value="fnIyOjFXVk42MHpmeFhjYkUzVjVVanV1S1hxb1dQb0ZWT09BOjAxOTE3MTYyNjRjNzg1MWRkOTBhNzM4ZTk3Y2YyOTYzfDZ9e9uHuoch0GRLaca2RZVWrsNbAQOf1aJpLNK5K2qdZ5HT08oXsKwo86tl_9EFTFUr0Npt9WK6074DQwwKcx0GrNRWj-VJ6AFejSdeJweTla9HUwYTrpA2qiGvaaeLek8hx021djfF9rwLFuUmBDLFB-ZJoHUU72dOluFpDGACMUtQm3237appYxWYc3N37P3cw6g-ZdeaPOSWa5ZCPKmkHhKEbcWeM9u__vemBkcoA2ZANTmu9f7kTNXWJi3H3dGRrlv00iBz3HEC74c6kBUP0kcFC-sp8MNuOFNFtWgszuWdYDaZFgIRFzACYXdCnu81ptKhbspGrZouenC9C4y_mwdq0gxQgEMuqS1HJD6sxJSqH_xV1vDumHkPM6wzC4wd4ouiyycPrCHj17gYC7Ns4nFzvepUrvi_0BgSbzisMp3aAJYat8FXjZyca3zuPHvucMYFyi7TfrHVbcgs-5IwiOJpA6AasggI063DkmyByJzveud_hqP3qQiVFPhXEMYQsKE7hM4mM2qU2LpxdLlyFKqqBYUhIbmlOLfXEERn4crV-ylzPrZsunCHYKEmILe-G64NTdOJF4wm73d_IXUvoRNLzs0KvdgO8X1QDZmqEfJU7jFbf0WmP4et98Geq-hEOAlokkdJaHaMx2s6q9dYR0wdFsRfZHB-JlbnGL8k68UI4fpL6No2DE_CM1MQ1vLov7FKhxeNTIBQUkRwWMgm1KUawZE9C1_dZ-F1oHOaL-rvFM4dtOF0_XpStMkw-i4i--Yal78G85W34OX6VL0iCW6g9UL335dWIs4ZpKcWTUjwWPlMRH-6ObufjwIz7wXoktIhcvKX9Ts6s-1ISLR9eJw7aQq4RTJSJW3kkcsRLRK6efozCI5x1zey7vhPEQFJbZVMULMYLNxeQy-ibcRsgAJN3OdXI5YL7LAjOPcG0ggJQiKcmtDm_t1XEU7PELJ5EfmtNLTqO7bhUfxB9949s-QJGX-_97T6SPwrQP3VImrFYFuKbe5Xrcc3OZD7pfcCZG9MAQysLISSQ04XP34WUVu7te0-XA-sU0nwJ683IxVwJM51rn1bwLFJRD1Ga9cHahTL49WRNhdnsSbPnYt1hDK0RSAzAue5ol87z4C1N7oFMRMOD_YjkJ5JPv-JhbnPvRT735Vn-O52VVTI6sccOHtQptBsSVJpYfi5PoFHsfmWAbvnuwGydja7QlM5w0FKymjVxivLHUweYEs0c8uxpn6x4pA6p2quz2l787Nccl1LYAYMYQcuoCL5Hw_KjlgpxaxPoVMQvNOEPsiQ_vYoRUpAWdKcbcvIiMVNvzwDBjirJoJt9l3EbbE0qKeQgmhC9HEFD9bf6BbX8VBPt5o" /><input type="hidden" id="s2member-pro-paypal-lang-attr" value="" /> <!-- Auto-filled by the s2Member software. Do NOT remove this under any circumstance. -->
+			<button type="submit" id="s2member-pro-paypal-registration-submit" class="s2member-pro-paypal-submit s2member-pro-paypal-registration-submit btn btn-primary" tabindex="400">Submit Form</button>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</form><br />
+By signing up I agree to the <a href="/terms-of-service/">terms of service</a> and the <a href="/privacy-policy/">privacy policy</a>. GPLDL will provide me with information on the <a href="/latest-updates-additions/">latest updates &amp; additions</a> via email (no spamming - no disclosure to 3rd parties). I can unsubscribe from the newsletter at any time.
+<div class="gap" style="line-height: 32px; height: 32px;"></div>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div></div><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3>What some of our Members are saying...</h3>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div><div class="wf-container loading-effect-fade-in iso-container" data-padding="20px" data-cur-page="1" data-width="80px" data-columns="3">
+<div class="wf-cell iso-item" data-date="2013-12-01T14:53:34-05:00" data-name="Fred E. Meyer" data-post-id="12893">
+<div class="testimonial-item">
+	<article>
+	<div class="testimonial-content"><p>"It is essential for running a secure website not to use nulled WordPress Themes and Plugins from dubious sources. None of the items I have downloaded from GPLDL have been modified in any way! If you need quality, go with GPLDL!"</p>
+</div>
+	<div class="testimonial-vcard"><div class="wf-td"><span class="alignleft"><img class="preload-me" src="https://gpldl.com/wp-content/uploads/user_testi3-60x60.jpg" width="60" height="60"  title="user_testi3" alt="" /></span></div><div class="wf-td"><span class="text-primary">Fred E. Meyer</span><br /><span class="text-secondary color-secondary">Freelancer</span></div></div>
+</article>
+</div>
+
+</div>
+<div class="wf-cell iso-item" data-date="2013-12-01T14:52:35-05:00" data-name="Lucy E. Zapana" data-post-id="12892">
+<div class="testimonial-item">
+	<article>
+	<div class="testimonial-content"><p>"I had a Fashion Blog running on WordPress. With my GPLDL subscription I got access to all WooCommerce Extensions and Themes and turned my blog into a fully featured Fashion Store."</p>
+</div>
+	<div class="testimonial-vcard"><div class="wf-td"><span class="alignleft"><img class="preload-me" src="https://gpldl.com/wp-content/uploads/user_testi2-60x60.jpg" width="60" height="60"  title="user_testi2" alt="" /></span></div><div class="wf-td"><span class="text-primary">Lucy E. Zapana</span><br /><span class="text-secondary color-secondary">Marketing Manager</span></div></div>
+</article>
+</div>
+
+</div>
+<div class="wf-cell iso-item" data-date="2013-12-01T14:51:15-05:00" data-name="Marc Anderson" data-post-id="12888">
+<div class="testimonial-item">
+	<article>
+	<div class="testimonial-content"><p>"GPLDL is a revolution - I just need the GPL licensed code and do not want to pay for expensive support licenses."</p>
+</div>
+	<div class="testimonial-vcard"><div class="wf-td"><span class="alignleft"><img class="preload-me" src="https://gpldl.com/wp-content/uploads/user_testi1-60x60.jpg" width="60" height="60"  title="user_testi1" alt="" /></span></div><div class="wf-td"><span class="text-primary">Marc Anderson</span><br /><span class="text-secondary color-secondary">Entrepreneuer</span></div></div>
+</article>
+</div>
+
+</div></div><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;">Still got Questions or not what you were looking for?</p>
+<p style="text-align: center;">Have a look at our <a href="/faq">F.A.Q.</a> or <a href="/contact">get in touch with us</a> and let us know what you need!</p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><section id="benefits-grid-2" class="benefits-grid wf-container benefits-style-two icons-bg light-bg light-hover-bg light-icon-color light-icon-hover-color" data-width="180px" data-columns="1"><style type="text/css">#benefits-grid-2.icons-bg .benefits-grid-ico { height: 70px; line-height: 70px; width: 70px; }#benefits-grid-2.icons-bg .benefits-grid-ico > .fa { font-size: 36px; line-height: 70px; }</style><div class="wf-cell"><div><div class="text-normal"><div class="wf-table"><div class="wf-td"></div><div class="wf-td benefits-inner"><div class="vc_row wpb_row wf-container" style="margin-top: 0px;margin-bottom: 0px"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="stripe stripe-style-3 stripe-transparent-bg" style="background-position: top;background-repeat: no-repeat;background-attachment: scroll;background-size: cover;padding-top: 0px;padding-bottom: 0px;margin-top: 16px;margin-bottom: 16px"><div class="vc_row wpb_row wf-container" style=""><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h4>General Information</h4>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div><div class="standard-arrow bullet-top"><ul>
+<li>All downloads available at GPLDL have been developed by one or more third parties (“developers”).</li>
+<li>GPLDL is not affiliated, associated, authorized, endorsed by or in any way related to 3rd party developers.</li>
+<li>Downloads are provided by GPLDL in full compliance with the <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">General Public License (GPL)</a>.</li>
+<li>Names, expressions and trademarks are used to the extent necessary to truthfully and accurately identify products according to the fair use doctrine.</li>
+<li>GPLDL will not guarantee the functionality of downloads nor shall it be held liable for any damages caused by installing downloads.</li>
+<li>GPLDL will not provide support for downloads - if you need support, please consider the purchase of an applicable support license from the respective developer.</li>
+</ul>
+</div><div class="vc_empty_space"   style="height: 16px"><span class="vc_empty_space_inner"></span></div></div></div></div></div></div>
+</div></div></div></div></div></section></div></div></div></div>
+
+					
+					
+					
+				
+			
+			</div><!-- #content -->
+
+			
+		
+
+			</div><!-- .wf-container -->
+		</div><!-- .wf-wrap -->
+	</div><!-- #main -->
+
+	
+	<!-- !Footer -->
+	<footer id="footer" class="footer transparent-bg">
+
+		
+			<div class="wf-wrap">
+				<div class="wf-container-footer">
+					<div class="wf-container">
+
+						<section id="presscore-contact-info-widget-2" class="widget widget_presscore-contact-info-widget wf-cell wf-1-4"><div class="widget-title">Welcome to GPLDL!</div><div class="widget-info"><img class="alignleft size-full wp-image-12201" alt="scr02" src="https://gpldl.com/wp-content/uploads/gpldl_logo_300x300-e1385919922259.gif" />We love innovation and we believe in free software! <BR><BR>
+That's why we strive to make the world's best Premium WordPress Themes & Plugins and WooCommerce Extensions & Themes available for everyone!
+</div><div class="soc-ico"><p class="assistive-text">Find us on:</p><a title="Facebook" href="https://www.facebook.com/gpldlcom" target="_blank" class="facebook"><span class="assistive-text">Facebook</span></a><a title="Twitter" href="https://twitter.com/gpldl" target="_blank" class="twitter"><span class="assistive-text">Twitter</span></a><a title="Google+" href="https://plus.google.com/+gpldlcom/" target="_blank" class="google"><span class="assistive-text">Google+</span></a><a title="Rss" href="/feed" target="_blank" class="rss"><span class="assistive-text">Rss</span></a><a title="Pinterest" href="http://www.pinterest.com/gpldl/" target="_blank" class="pinterest"><span class="assistive-text">Pinterest</span></a></div></section><section id="presscore-blog-posts-4" class="widget widget_presscore-blog-posts wf-cell wf-1-4"><div class="widget-title">Latest Blog Posts</div><ul class="recent-posts round-images"><li><article class="post-format-standard"><div class="wf-td"></div><div class="post-content"><a href="https://gpldl.com/get-mailpoet-premium-newsletter-wordpress-plugin-free-forever/">How to get the MailPoet Premium Newsletter WordPress Plugin for free forever?</a><br /><time class="text-secondary" datetime="2017-01-22T12:40:20-05:00">January 22, 2017</time></div></article></li><li><article class="post-format-standard"><div class="wf-td"></div><div class="post-content"><a href="https://gpldl.com/remove-license-code-check-wp-rocket-wordpress-plugin/">How to remove the license code check from the WP-Rocket WordPress Plugin</a><br /><time class="text-secondary" datetime="2017-01-02T14:16:24-05:00">January 2, 2017</time></div></article></li><li><article class="post-format-standard"><div class="wf-td"></div><div class="post-content"><a href="https://gpldl.com/remove-woothemes-updater-plugin-notification-wordpress-admin-dashboard/">How to remove the WooThemes Updater Plugin notification from your WordPress Admin Dashboard</a><br /><time class="text-secondary" datetime="2016-05-28T06:20:30-04:00">May 28, 2016</time></div></article></li></ul></section><section id="presscore-blog-posts-5" class="widget widget_presscore-blog-posts wf-cell wf-1-4"><div class="widget-title">Latest Updates &#038; Additions</div><ul class="recent-posts round-images"><li><article class="post-format-standard"><div class="wf-td"></div><div class="post-content"><a href="https://gpldl.com/gpldl-news-101-updates-additions-today-download-2420-premium-wordpress-items/">GPLDL News: 101 Updates &#038; Additions today &#8211; Download 2420 Premium WordPress items!</a><br /><time class="text-secondary" datetime="2021-08-08T15:55:19-04:00">August 8, 2021</time></div></article></li><li><article class="post-format-standard"><div class="wf-td"></div><div class="post-content"><a href="https://gpldl.com/gpldl-news-145-updates-additions-today-download-2396-premium-wordpress-items/">GPLDL News: 145 Updates &#038; Additions today &#8211; Download 2396 Premium WordPress items!</a><br /><time class="text-secondary" datetime="2021-08-01T13:56:10-04:00">August 1, 2021</time></div></article></li><li><article class="post-format-standard"><div class="wf-td"></div><div class="post-content"><a href="https://gpldl.com/gpldl-news-251-updates-additions-today-download-2396-premium-wordpress-items/">GPLDL News: 251 Updates &#038; Additions today &#8211; Download 2396 Premium WordPress items!</a><br /><time class="text-secondary" datetime="2021-07-25T15:10:29-04:00">July 25, 2021</time></div></article></li></ul></section><section id="presscore-custom-menu-2-5" class="widget widget_presscore-custom-menu-2 widget-custom-nav wf-cell wf-1-4"><div class="widget-title">About GPLDL</div><ul class="custom-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14028 first"><a href="https://gpldl.com/about-gpldl/"><span>About GPLDL</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13909"><a href="https://gpldl.com/faq/"><span>F.A.Q.</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13508"><a href="https://gpldl.com/terms-of-service/"><span>Terms of Service</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-13511"><a href="https://gpldl.com/privacy-policy/"><span>Privacy Policy</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13865"><a href="https://gpldl.com/contact/"><span>Contact</span></a></li></ul></section>
+					</div><!-- .wf-container -->
+				</div><!-- .wf-container-footer -->
+			</div><!-- .wf-wrap -->
+
+		
+<!-- !Bottom-bar -->
+<div id="bottom-bar"  role="contentinfo">
+	<div class="wf-wrap">
+		<div class="wf-container-bottom">
+			<div class="wf-table wf-mobile-collapsed">
+
+				
+					<div class="wf-td">
+						<div class="wf-float-left">
+
+							GPLDL - all Rights reserved.
+						</div>
+					</div>
+
+				
+				<div class="wf-td">
+
+					<div class="mini-nav wf-float-right"><ul>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-14028 first"><a href="https://gpldl.com/about-gpldl/" data-level="1"><span>About GPLDL</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-13909"><a href="https://gpldl.com/faq/" data-level="1"><span>F.A.Q.</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-13508"><a href="https://gpldl.com/terms-of-service/" data-level="1"><span>Terms of Service</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-13511"><a href="https://gpldl.com/privacy-policy/" data-level="1"><span>Privacy Policy</span></a></li> 
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-13865"><a href="https://gpldl.com/contact/" data-level="1"><span>Contact</span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_itemact menu-frame-on"><a href="/sign-in">Sign In</a></li>
+</ul><div class="menu-select"><span class="customSelect1"><span class="customSelectInner">GPLDL Widget Menu</span></span></div></div>
+				</div>
+
+				
+			</div>
+		</div><!-- .wf-container-bottom -->
+	</div><!-- .wf-wrap -->
+</div><!-- #bottom-bar -->
+	</footer><!-- #footer -->
+
+
+
+	<a href="#" class="scroll-top"></a>
+
+</div><!-- #page -->
+<script type="text/html" id="wpb-modifications"></script>		<!-- Google Tag Manager (noscript) added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHXR6VB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/go_pricing/assets/js/go_pricing_scripts.js?ver=3.3.18' id='go-pricing-scripts-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/gpldl-checkemail/gpldl-dec.js?ver=1.1' id='gpldl-dec-script-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.5' id='page-links-to-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/themes/dt-the7/js/main.min.js?ver=1.0.0' id='dt-main-js'></script>
+<script type='text/javascript' id='jquery-migrate-deprecation-notices-js-extra'>
+/* <![CDATA[ */
+var JQMH = {"ajaxurl":"https:\/\/gpldl.com\/wp-admin\/admin-ajax.php","report_nonce":"24bf0b5b72","backend":"","plugin_slug":"enable-jquery-migrate-helper","capture_deprecations":"1","single_instance_log":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/enable-jquery-migrate-helper/js/deprecation-notice.js?ver=2d02023148bfc93968e2e5f5a01f6769' id='jquery-migrate-deprecation-notices-js'></script>
+<script type='text/javascript' data-cfasync="false" src='https://gpldl.com/wp-content/plugins/s2member/s2member-o.php?ws_plugin__s2member_js_w_globals=1&#038;qcABC=1&#038;ver=210526-210526-2460204663' id='ws-plugin--s2member-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-includes/js/wp-embed.min.js?ver=2d02023148bfc93968e2e5f5a01f6769' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://gpldl.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.6.0.1' id='wpb_composer_front_js-js'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202132.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.1.2',blog:'82697837',post:'15336',tz:'-4',srv:'gpldl.com'} ]);
+	_stq.push([ 'clickTrackerInit', '82697837', '15336' ]);
+</script>
+
+		<!-- Cookie Notice plugin v2.1.0 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="banner" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(136,136,136,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button" aria-label="Ok">Ok</a><a href="https://gpldl.com/privacy-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button bootstrap button" aria-label="Privacy policy">Privacy policy</a></span><a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Ok"></a></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin --></body>
+</html>

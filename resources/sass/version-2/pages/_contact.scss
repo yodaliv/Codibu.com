@@ -1,0 +1,102 @@
+.contact-wrapper {
+   & > .d-flex {
+      max-width : 1440px;
+      margin    : 80px auto;
+      padding   : 0 70px;
+      @include media-breakpoint-down(lg) {
+         padding : 0 40px;
+      }
+      @include media-breakpoint-down(sm) {
+         padding : 0 40px;
+      }
+   }
+
+   .left-item {
+      flex-basis  : 40%;
+      flex-grow   : 0;
+      flex-shrink : 0;
+      padding-top : 40px;
+      @include media-breakpoint-down(sm) {
+         flex-basis  : 100%;
+      }
+      /*&:before {
+         @include afterStyle(top, right);
+         width      : 1px;
+         height     : 60%;
+         top        : 15%;
+         background : rgba(0, 0, 0, 0.1);
+      }*/
+   }
+
+   .right-item {
+      flex-basis  : 60%;
+      flex-grow   : 0;
+      flex-shrink : 0;
+      max-width   : 625px;
+      padding     : 40px 60px;
+      box-shadow: 0 0 10px 2px rgb(0 0 0 / 6%);
+      border-radius: 10px;
+      @include media-breakpoint-down(xl) {
+         max-width : 425px;
+      }
+      @include media-breakpoint-down(xl) {
+         padding     : 40px 35px;
+      }
+      @include media-breakpoint-down(sm) {
+         flex-basis  : 100%;
+         padding : 20px;
+         margin-top : 25px;
+      }
+
+   }
+
+   h1 {
+      @include fontStyle(56, 84, 700);
+      margin-bottom : 15px;
+      @include media-breakpoint-down(xl) {
+         @include fontStyle(32, 64, 700);
+      }
+      @include media-breakpoint-down(md) {
+         @include fontStyle(22, 40, 700);
+      }
+      @include media-breakpoint-down(sm) {
+         @include fontStyle(18, 35, 700)
+      }
+   }
+
+   p {
+      @include fontStyle(16, 32, 400);
+      max-width : 415px;
+      @include media-breakpoint-down(xxl) {
+         max-width : 360px;
+      }
+      @include media-breakpoint-down(lg) {
+         @include fontStyle(14, 30, 400);
+         margin-right : 15px;
+      }
+      @include media-breakpoint-down(sm) {
+         @include fontStyle(12, 24, 400);
+         margin-right : 0;
+      }
+   }
+
+   h3 {
+      @include fontStyle(24, 36, 600);
+      margin-bottom : 32px;
+      @include media-breakpoint-down(lg) {
+         @include fontStyle(20, 30, 600);
+      }
+      @include media-breakpoint-down(sm) {
+         @include fontStyle(18, 30, 600);
+         margin-bottom: 20px;
+      }
+   }
+
+   .free-trail-search {
+      button {
+         height : 56px;
+         width  : 100%;
+         @include fontStyle(16, 24, 400);
+      }
+   }
+}

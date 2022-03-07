@@ -1,0 +1,100 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/shaheen2013/laravel-godaddy"
+        }
+    ],
+    "require": {
+        "php": "^7.3|7.*",
+        "amzn/amazon-pay-api-sdk-php": "^2.2",
+        "aws/aws-sdk-php": "^3.178",
+        "betapeak/laravel-godaddy": "dev-update-laravel",
+        "cartalyst/stripe-laravel": "12.*",
+        "composer/installers": "^1",
+        "doctrine/dbal": "v2.13.2",
+        "encore/laravel-admin": "^1.8",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.3",
+        "intervention/image": "^2.5",
+        "laravel-admin-ext/ckeditor": "^1.0",
+        "laravel-admin-ext/grid-sortable": "^1.1",
+        "laravel/framework": "7.*",
+        "laravel/socialite": "^5.2",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^2.4",
+        "laravelcollective/html": "^6.2",
+        "laravelcollective/remote": "^6.2",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "phois/whois": "dev-master",
+        "php-webdriver/webdriver": "^1.11",
+        "revolution/socialite-amazon": "^1.1",
+        "socialiteproviders/instagram": "^4.1",
+        "srmklive/paypal": "v3.0.x-dev",
+        "stripe/stripe-php": "^7.77"
+    },
+    "require-dev": {
+        "beyondcode/laravel-dump-server": "^1.7",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "filp/whoops": "^2.12",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/helpers.php",
+            "app/Helpers/coupon.php",
+            "app/Helpers/payment-history.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

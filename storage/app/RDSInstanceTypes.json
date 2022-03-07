@@ -1,0 +1,252 @@
+[
+    {
+        "Instance_class": "db.t2.micro",
+        "vCPU": 1,
+        "ECU": "Variable",
+        "Memory_(GiB)": "1",
+        "VPC_only": "Yes",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Low"
+    },
+    {
+        "Instance_class": "db.t2.small",
+        "vCPU": 1,
+        "ECU": "Variable",
+        "Memory_(GiB)": "2",
+        "VPC_only": "Yes",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Low"
+    },
+    {
+        "Instance_class": "db.t2.medium",
+        "vCPU": 2,
+        "ECU": "Variable",
+        "Memory_(GiB)": "4",
+        "VPC_only": "Yes",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.t2.large",
+        "vCPU": 2,
+        "ECU": "Variable",
+        "Memory_(GiB)": "8",
+        "VPC_only": "Yes",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m1.small",
+        "vCPU": 1,
+        "ECU": "1",
+        "Memory_(GiB)": "1.7",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Very Low"
+    },
+    {
+        "Instance_class": "db.m1.medium",
+        "vCPU": 1,
+        "ECU": "1",
+        "Memory_(GiB)": "3.75",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m1.large",
+        "vCPU": 2,
+        "ECU": "2",
+        "Memory_(GiB)": "7.5",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "450",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m1.xlarge",
+        "vCPU": 4,
+        "ECU": "4",
+        "Memory_(GiB)": "15",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "450",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m2.xlarge",
+        "vCPU": 2,
+        "ECU": "6.5",
+        "Memory_(GiB)": "17.1",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m2.2xlarge",
+        "vCPU": 4,
+        "ECU": "13",
+        "Memory_(GiB)": "34.2",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "500",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m2.4xlarge",
+        "vCPU": 8,
+        "ECU": "26",
+        "Memory_(GiB)": "68.4",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "1,000",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m3.medium",
+        "vCPU": 1,
+        "ECU": "3",
+        "Memory_(GiB)": "3.75",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m3.large",
+        "vCPU": 2,
+        "ECU": "6.5",
+        "Memory_(GiB)": "7.5",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m3.xlarge",
+        "vCPU": 4,
+        "ECU": "13",
+        "Memory_(GiB)": "15",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "500",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m3.2xlarge",
+        "vCPU": 8,
+        "ECU": "26",
+        "Memory_(GiB)": "30",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "1,000",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m4.large",
+        "vCPU": 2,
+        "ECU": "6.5",
+        "Memory_(GiB)": "8",
+        "VPC_only": "Yes",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "450",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.m4.xlarge",
+        "vCPU": 4,
+        "ECU": "13",
+        "Memory_(GiB)": "16",
+        "VPC_only": "Yes",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "750",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m4.2xlarge",
+        "vCPU": 8,
+        "ECU": "25.5",
+        "Memory_(GiB)": "32",
+        "VPC_only": "Yes",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "1,000",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m4.4xlarge",
+        "vCPU": 16,
+        "ECU": "53.5",
+        "Memory_(GiB)": "64",
+        "VPC_only": "Yes",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "2,000",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.m4.10xlarge",
+        "vCPU": 40,
+        "ECU": "124.5",
+        "Memory_(GiB)": "160",
+        "VPC_only": "Yes",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "4,000",
+        "Network_performance": "10 Gbps"
+    },
+    {
+        "Instance_class": "db.r3.large",
+        "vCPU": 2,
+        "ECU": "6.5",
+        "Memory_(GiB)": "15.25",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.r3.xlarge",
+        "vCPU": 4,
+        "ECU": "13",
+        "Memory_(GiB)": "30.5",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "500",
+        "Network_performance": "Moderate"
+    },
+    {
+        "Instance_class": "db.r3.2xlarge",
+        "vCPU": 8,
+        "ECU": "26",
+        "Memory_(GiB)": "61",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "1,000",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.r3.4xlarge",
+        "vCPU": 16,
+        "ECU": "52",
+        "Memory_(GiB)": "122",
+        "VPC_only": "No",
+        "EBS_optimized": "Yes",
+        "Max_bandwidth_(mbps)": "2,000",
+        "Network_performance": "High"
+    },
+    {
+        "Instance_class": "db.r3.8xlarge",
+        "vCPU": 32,
+        "ECU": "104",
+        "Memory_(GiB)": "244",
+        "VPC_only": "No",
+        "EBS_optimized": "No",
+        "Max_bandwidth_(mbps)": "—",
+        "Network_performance": "10 Gbps"
+    }
+]

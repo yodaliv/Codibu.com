@@ -1,0 +1,393 @@
+.user-account {
+   width    : 100%;
+   height   : 100vh;
+   margin   : 0 auto;
+   overflow : hidden;
+   @include media-breakpoint-down(sm) {
+      height : auto;
+   }
+
+   .left-section {
+      width               : 35%;
+      max-width           : 520px;
+      background-image    : url("/images/login-bg.svg");
+      background-position : center;
+      background-size     : cover;
+      background-repeat   : no-repeat;
+      padding             : 0 80px;
+      position            : relative;
+      z-index             : 1;
+
+      @include media-breakpoint-down(lg) {
+         padding : 0 50px;
+      }
+      @include media-breakpoint-down(md) {
+         width : 40%;
+      }
+      @include media-breakpoint-down(sm) {
+         width   : 100%;
+         display : none;
+      }
+
+      &:after {
+         @include afterStyle(top, left);
+         background : rgba(0, 0, 0, .8);
+      }
+
+      h2 {
+         @include fontStyle(48, 72, 600);
+         margin-bottom : 24px;
+         color         : #ffffff;
+         @include media-breakpoint-down(xl) {
+            @include fontStyle(36, 56, 600);
+         }
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(28, 38, 600);
+         }
+         @include media-breakpoint-down(md) {
+            @include fontStyle(22, 38, 600);
+         }
+      }
+
+      p {
+         @include fontStyle(18, 36, 500);
+         color : #ffffff;
+         @include media-breakpoint-down(xl) {
+            @include fontStyle(16, 30, 500);
+         }
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(14, 28, 500);
+         }
+      }
+   }
+
+   .right-section {
+      width     : 65%;
+      max-width : 576px;
+      margin    : 0 auto;
+
+      @include media-breakpoint-down(lg) {
+         max-width : 450px;
+      }
+
+      @include media-breakpoint-down(md) {
+         width     : 60%;
+         max-width : 300px;
+      }
+      @include media-breakpoint-down(sm) {
+         width : 100%;
+      }
+
+      .free-trail-search {
+         &.icon-insert {
+            a, button {
+               width  : 200px;
+               height : 54px;
+
+               &.send-password {
+                  width   : auto;
+                  padding : 0 20px;
+               }
+
+               @include media-breakpoint-down(lg) {
+                  width  : 140px;
+                  height : 52px;
+                  &.send-password {
+                     padding : 0 10px;
+                  }
+               }
+               @include media-breakpoint-down(sm) {
+                  width     : 100%;
+                  font-size : 14px;
+                  &.send-password {
+                     width : 100%;
+                  }
+               }
+            }
+         }
+      }
+
+      .login-content {
+         h2 {
+            @include fontStyle(38, 57, 600);
+            color         : #000000;
+            margin-bottom : 40px;
+            @include media-breakpoint-down(lg) {
+               @include fontStyle(28, 40, 600);
+               margin-bottom : 20px;
+            }
+            @include media-breakpoint-down(md) {
+               font-size : 23px;
+            }
+         }
+      }
+
+      .social-item {
+         flex-basis      : calc(50% - 8px);
+         height          : 56px;
+         display         : flex;
+         align-items     : center;
+         justify-content : left;
+         padding-left    : 30px;
+         flex-grow       : 0;
+         flex-shrink     : 0;
+         margin          : 0 15px 15px 0;
+         text-decoration : none;
+
+         @include media-breakpoint-down(lg) {
+            height    : 52px;
+            font-size : 14px;
+         }
+         @include media-breakpoint-down(md) {
+            font-size    : 12px;
+            padding-left : 18px;
+         }
+         @include media-breakpoint-down(sm) {
+
+         }
+
+         img {
+            width        : 15px;
+            margin-right : 15px !important;
+         }
+      }
+
+      .divider {
+         position            : relative;
+         margin              : 32px 5px 36px;
+         border              : 1px solid;
+         border-image-slice  : 1;
+         border-image-source : linear-gradient(90deg, rgba(0, 198, 255, 0.12) 9.37%, rgba(30, 130, 255, 0.12) 100%);
+         @include media-breakpoint-down(md) {
+            font-size : 14px;
+         }
+
+         @include media-breakpoint-down(sm) {
+            margin : 22px 5px 26px;
+         }
+
+         &::before {
+            position   : absolute;
+            content    : attr(data-text);
+            text-align : center;
+            width      : fit-content;
+            background : #fff;
+            display    : inline-block;
+            padding    : 10px;
+            left       : 50%;
+            top        : 50%;
+            transform  : translate(-50%, -50%);
+            color      : rgba(0, 0, 0, 0.5);
+
+         }
+      }
+
+
+   }
+
+   .position-absolute {
+      top : 60px;
+   }
+
+   .logo {
+      @include media-breakpoint-down(sm) {
+         margin : 12px 0 16px;
+         img {
+            width : 100px;
+         }
+      }
+   }
+
+   &.register-section {
+      .left-section {
+         background-image : url("/images/signup-cover.svg");
+         @include media-breakpoint-down(xl) {
+            padding : 0 40px;
+         }
+         @include media-breakpoint-down(lg) {
+            padding : 0 30px;
+         }
+         @include media-breakpoint-down(md) {
+            padding : 0 20px;
+         }
+
+         .key-services {
+
+            h3 {
+               @include fontStyle(32, 48, 600);
+               color         : #fff;
+               margin-bottom : 40px;
+
+               @include media-breakpoint-only(xl) {
+                  margin-top : 110px;
+               }
+               @include media-breakpoint-down(xl) {
+                  font-size : 22px;
+               }
+            }
+
+            .d-flex {
+               margin-bottom : 28px;
+
+               @include media-breakpoint-down(xl) {
+                  margin-bottom : 15px;
+                  img {
+                     width      : 13px;
+                     margin-top : 4px;
+                  }
+               }
+
+            }
+
+            p {
+               @include fontStyle(16, 24, 500);
+               margin-left : 10px;
+               @include media-breakpoint-down(xl) {
+                  @include fontStyle(15, 24, 400);
+               }
+               @include media-breakpoint-down(lg) {
+                  @include fontStyle(14, 22, 400);
+               }
+            }
+         }
+      }
+
+   }
+
+}
+
+.group-input {
+   margin-bottom : 24px;
+   @include fontStyle(16, 24, 400);
+
+   label {
+      color         : rgba(34, 34, 34, 1);
+      width         : 100%;
+      margin-bottom : 16px;
+      margin-left   : 5px;
+      @include media-breakpoint-down(md) {
+         margin-bottom : 8px;
+         font-size     : 14px;
+      }
+   }
+
+   .control-form {
+      height        : 52px;
+      width         : 100%;
+      padding       : 14px 22px;
+      border        : none;
+      border-radius : 5px;
+      @include media-breakpoint-down(lg) {
+         height : 48px;
+      }
+      @include media-breakpoint-down(md) {
+         font-size : 14px;
+         padding   : 10px 15px;
+      }
+   }
+
+   textarea.control-form {
+      height     : auto;
+      min-height : 140px;
+   }
+
+   .form-check {
+      color : rgba(34, 34, 34, 1);
+      @include fontStyle(14, 21, 300);
+
+      label {
+         width : auto !important;
+      }
+
+      input {
+         cursor : pointer;
+      }
+
+      a {
+         color : rgba(34, 34, 34, 1);
+      }
+   }
+
+   .signup-text {
+      @include fontStyle(16, 24, 400);
+      margin-left   : 32px;
+      margin-bottom : 0;
+      @include media-breakpoint-down(lg) {
+         font-size   : 14px;
+         margin-left : 30px;
+      }
+      @include media-breakpoint-down(md) {
+         margin-left : 0;
+         margin-top  : 16px;
+      }
+
+      a {
+         @include fontStyle(16, 24, 400);
+         @include media-breakpoint-down(lg) {
+            font-size : 14px;
+         }
+      }
+   }
+
+   &.w-49 {
+      width : 49%;
+      @include media-breakpoint-down(sm) {
+         width : 100%;
+      }
+   }
+
+   .invalid-feedback-error {
+      color     : red;
+      font-size : 14px;
+      @include media-breakpoint-down(sm) {
+         font-size : 12px;
+      }
+   }
+}
+
+.border-gradient {
+   position      : relative;
+   box-sizing    : border-box;
+   color         : #000;
+   background    : #fff;
+   border-radius : 4px;
+
+   &:before {
+      content       : "";
+      position      : absolute;
+      top           : 0;
+      right         : 0;
+      bottom        : 0;
+      left          : 0;
+      z-index       : -1;
+      margin        : -1px;
+      border-radius : 5px;
+      background    : linear-gradient(90deg, rgba(0, 198, 255, 0.5) 9.37%, rgba(30, 130, 255, 0.5) 100%);
+   }
+
+   &.active-gradient {
+      &:before {
+         background : linear-gradient(90deg, rgba(0, 198, 255, 1) 9.37%, rgba(30, 130, 255, 1) 100%);
+      }
+   }
+
+   &.is-invalid-error {
+      border : 1px solid red;
+
+      &:before {
+         content : none;
+      }
+   }
+}
+
+.position-icon {
+   position  : absolute;
+   right     : 5px;
+   top       : 50%;
+   transform : translate(-50%, -50%);
+   display   : none;
+}
+
+.active {
+   display : block;
+}

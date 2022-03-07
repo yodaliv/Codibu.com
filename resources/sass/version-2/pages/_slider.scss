@@ -1,0 +1,268 @@
+.slider {
+   background : #FCF9FA;
+
+   .hr {
+      color : #3545EE;
+      @include media-breakpoint-down(lg) {
+         margin-top    : -10px;
+         margin-bottom : -10px;
+      }
+      @include media-breakpoint-down(sm) {
+         margin-top    : -15px;
+         margin-bottom : -15px;
+      }
+   }
+
+   .slider_header {
+      @include media-breakpoint-down(sm) {
+         margin-top : -10px;
+      }
+
+      h1 {
+         font-weight : 700;
+         font-size   : 32px;
+         line-height : 50px;
+         color       : #003C56;
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(24, 32, 700);
+         }
+         @include media-breakpoint-down(md) {
+            @include fontStyle(20, 27, 700);
+         }
+         @include media-breakpoint-down(sm) {
+            @include fontStyle(16, 21, 700);
+         }
+      }
+
+      p {
+         color     : #000000;
+         max-width : 560px;
+         margin    : 20px auto 25px;
+         @include fontStyle(16, 21, 400);
+
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(14, 19, 400);
+            margin-top    : 30px;
+            margin-bottom : 20px;
+            max-width     : 490px;
+         }
+         @include media-breakpoint-down(md) {
+            @include fontStyle(13, 17, 400);
+            margin-top    : 20px;
+            margin-bottom : 34px;
+            max-width     : 455px;
+         }
+         @include media-breakpoint-down(sm) {
+            @include fontStyle(12, 16, 400);
+            margin-top    : 20px;
+            margin-bottom : 20px;
+            max-width     : 261px;
+         }
+      }
+
+      .slider_header_link {
+         a {
+            text-decoration : none;
+            color           : #2AA6DE;
+            @include fontStyle(18, 24, 700);
+            @include media-breakpoint-down(lg) {
+               @include fontStyle(14, 19, 600);
+            }
+            @include media-breakpoint-down(md) {
+               @include fontStyle(13, 17, 600);
+            }
+            @include media-breakpoint-down(sm) {
+               @include fontStyle(12, 16, 600);
+            }
+
+            img {
+               margin-left : 5px;
+               @include media-breakpoint-down(sm) {
+                  width : 20px;
+               }
+            }
+         }
+      }
+   }
+
+   .slider_btn {
+
+      @include media-breakpoint-down(md) {
+         margin-bottom : -11px;
+      }
+
+      @include media-breakpoint-down(sm) {
+         margin-bottom : -21px;
+      }
+
+      a {
+         margin-right    : 60px;
+         color           : #003C56;
+         text-decoration : none;
+         border          : 3px solid transparent;
+         transition      : all 0.5s;
+         padding-bottom  : 8px;
+         border-radius   : 4px;
+         @include fontStyle(18, 24, 600);
+
+         &:last-child {
+            margin-right : 0;
+         }
+
+         &:hover, &.active {
+            border-bottom : 3px solid #003C56;
+            @include media-breakpoint-down(md) {
+               border-bottom : 2px solid #003C56;
+               font-weight   : 700;
+            }
+            @include media-breakpoint-down(sm) {
+               border-bottom : 1px solid #003C56;
+               font-weight   : 700;
+            }
+         }
+
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(16, 21, 600);
+         }
+         @include media-breakpoint-down(md) {
+            border-bottom : 2px solid transparent;
+            @include fontStyle(14, 19, 600);
+         }
+         @include media-breakpoint-down(sm) {
+            border-bottom : 1px solid transparent;
+            @include fontStyle(12, 16, 600);
+            margin-right  : 20px;
+         }
+      }
+   }
+
+   #ecommerce, #business {
+      display : none;
+   }
+
+   //owl-carousel
+   .slider_item {
+
+      p {
+         margin-top : 30px;
+         @include fontStyle(20, 22, 600);
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(18, 20, 600);
+         }
+         @include media-breakpoint-down(md) {
+            @include fontStyle(13, 18, 600);
+            margin-top : 15px;
+         }
+         @include media-breakpoint-down(sm) {
+            @include fontStyle(12, 16, 600);
+            margin-top : 15px;
+         }
+
+      }
+
+      .img-box {
+         height        : 440px;
+         border-radius : 10px;
+         position      : relative;
+         overflow      : hidden;
+
+         @include media-breakpoint-down(xl) {
+            height : 407px;
+         }
+
+         @include media-breakpoint-down(md) {
+            height : 397px;
+         }
+
+         @include media-breakpoint-down(sm) {
+            height : 226px;
+         }
+
+      }
+   }
+
+   .owl-item.active.center {
+      transform : scale(1) !important;
+      /* @include media-breakpoint-down(sm){
+          transform: scale(.9) !important;
+       }*/
+      .img-box {
+         box-shadow : 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+      }
+   }
+
+   .owl-item {
+      transition : all .5s;
+      transform  : scale(.9) !important;
+   }
+
+   .owl-dots {
+      display         : flex;
+      justify-content : center;
+   }
+
+   .owl-nav {
+      display         : flex;
+      justify-content : center;
+      padding-bottom  : 50px;
+   }
+
+   .owl-nav button {
+      border        : 2px solid $color-sky !important;
+      width         : 50px;
+      height        : 50px;
+      border-radius : 50%;
+      margin        : 50px 40px 0;
+      @include media-breakpoint-down(md) {
+         width  : 35px;
+         height : 35px;
+         img {
+            width : 35%;
+         }
+      }
+   }
+
+   #owl-number {
+      position  : absolute;
+      bottom    : 44px;
+      transform : translate(-50%, -50%);
+      left      : 50%;
+      @include fontStyle(20, 30, 400);
+      @include media-breakpoint-down(md) {
+         bottom    : 35px;
+         font-size : 16px;
+      }
+   }
+
+}
+
+.scrollable-image {
+   max-width : 100%;
+   height    : auto;
+   position  : absolute;
+   z-index   : 0;
+   margin    : auto;
+   left      : 0;
+   right     : 0;
+   padding   : 0;
+}
+
+
+.preloader-slider-section {
+   width      : 100%;
+   height     : 100%;
+   position   : absolute;
+   left       : 0;
+   top        : 0;
+   background : #aec9e5d9;
+   z-index    : 9999;
+   display    : none;
+
+   img {
+      width     : 300px;
+      top       : 50%;
+      left      : 50%;
+      transform : translate(-50%, -50%);
+      position  : absolute;
+   }
+}

@@ -1,0 +1,16 @@
+// import bootstrap
+@import 'resources/plugins/bootstrap/scss/bootstrap';
+@import 'reset/typography';
+@import 'abstract/variable';
+@import 'abstract/mixin';
+@import 'reset/base';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+@import 'pages/index';
+@import 'pages/contact';
+@import 'pages/pricing';
+@import 'pages/login';

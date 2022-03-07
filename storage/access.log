@@ -1,0 +1,5 @@
+127.0.0.1 - - [13/Jul/2021:18:25:55 +0600] "GET / HTTP/1.1" 301 565 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+127.0.0.1 - - [13/Jul/2021:18:30:08 +0600] "GET / HTTP/1.1" 301 565 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+127.0.0.1 - - [13/Jul/2021:18:33:14 +0600] "GET / HTTP/1.1" 301 565 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+127.0.0.1 - - [13/Jul/2021:18:41:01 +0600] "GET / HTTP/1.1" 301 565 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+127.0.0.1 - - [13/Jul/2021:18:41:14 +0600] "GET / HTTP/1.1" 301 565 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"

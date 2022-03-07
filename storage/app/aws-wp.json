@@ -1,0 +1,696 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Codibu basic WordPress - CloudFormation Stack with EC2, RDS",
+    "Metadata": {
+        "AWS::CloudFormation::Interface": {
+            "ParameterGroups": [
+                {
+                    "Label": {
+                        "default": "Amazon EC2 Configuration"
+                    },
+                    "Parameters": [
+                        "InstanceType",
+                        "EC2InstanceName",
+                        "KeyName"
+                    ]
+                },
+                {
+                    "Label": {
+                        "default": "Amazon RDS Configuration"
+                    },
+                    "Parameters": [
+                        "RDSInstanceName",
+                        "RDSInstanceType",
+                        "MySQLUserName",
+                        "MySQLPassword",
+                        "DatabaseName",
+                        "DBAllocatedStorage"
+                    ]
+                }
+            ],
+            "ParameterLabels": {
+                "EC2InstanceName": {
+                    "default": "Value"
+                },
+                "InstanceType": {
+                    "default": "Instance Type"
+                },
+                "KeyName": {
+                    "default": "Key Name"
+                },
+                "RDSInstanceName": {
+                    "default": "Value"
+                },
+                "RDSInstanceType": {
+                    "default": "Instance Type"
+                },
+                "MySQLUserName": {
+                    "default": "MySQL Admin Username"
+                },
+                "MySQLPassword": {
+                    "default": "MySQL Admin Password"
+                },
+                "DatabaseName": {
+                    "default": "Insert DB Name"
+                },
+                "DBAllocatedStorage": {
+                    "default": "DB Allocated Storage"
+                }
+            }
+        }
+    },
+    "Mappings" : {
+        "AWSInstanceType2Arch" : {
+        "t1.micro"    : { "Arch" : "HVM64"  },
+        "t2.nano"     : { "Arch" : "HVM64"  },
+        "t2.micro"    : { "Arch" : "HVM64"  },
+        "t2.small"    : { "Arch" : "HVM64"  },
+        "t2.medium"   : { "Arch" : "HVM64"  },
+        "t2.large"    : { "Arch" : "HVM64"  },
+        "m1.small"    : { "Arch" : "HVM64"  },
+        "m1.medium"   : { "Arch" : "HVM64"  },
+        "m1.large"    : { "Arch" : "HVM64"  },
+        "m1.xlarge"   : { "Arch" : "HVM64"  },
+        "m2.xlarge"   : { "Arch" : "HVM64"  },
+        "m2.2xlarge"  : { "Arch" : "HVM64"  },
+        "m2.4xlarge"  : { "Arch" : "HVM64"  },
+        "m3.medium"   : { "Arch" : "HVM64"  },
+        "m3.large"    : { "Arch" : "HVM64"  },
+        "m3.xlarge"   : { "Arch" : "HVM64"  },
+        "m3.2xlarge"  : { "Arch" : "HVM64"  },
+        "m4.large"    : { "Arch" : "HVM64"  },
+        "m4.xlarge"   : { "Arch" : "HVM64"  },
+        "m4.2xlarge"  : { "Arch" : "HVM64"  },
+        "m4.4xlarge"  : { "Arch" : "HVM64"  },
+        "m4.10xlarge" : { "Arch" : "HVM64"  },
+        "c1.medium"   : { "Arch" : "HVM64"  },
+        "c1.xlarge"   : { "Arch" : "HVM64"  },
+        "c3.large"    : { "Arch" : "HVM64"  },
+        "c3.xlarge"   : { "Arch" : "HVM64"  },
+        "c3.2xlarge"  : { "Arch" : "HVM64"  },
+        "c3.4xlarge"  : { "Arch" : "HVM64"  },
+        "c3.8xlarge"  : { "Arch" : "HVM64"  },
+        "c4.large"    : { "Arch" : "HVM64"  },
+        "c4.xlarge"   : { "Arch" : "HVM64"  },
+        "c4.2xlarge"  : { "Arch" : "HVM64"  },
+        "c4.4xlarge"  : { "Arch" : "HVM64"  },
+        "c4.8xlarge"  : { "Arch" : "HVM64"  },
+        "g2.2xlarge"  : { "Arch" : "HVMG2"  },
+        "g2.8xlarge"  : { "Arch" : "HVMG2"  },
+        "r3.large"    : { "Arch" : "HVM64"  },
+        "r3.xlarge"   : { "Arch" : "HVM64"  },
+        "r3.2xlarge"  : { "Arch" : "HVM64"  },
+        "r3.4xlarge"  : { "Arch" : "HVM64"  },
+        "r3.8xlarge"  : { "Arch" : "HVM64"  },
+        "i2.xlarge"   : { "Arch" : "HVM64"  },
+        "i2.2xlarge"  : { "Arch" : "HVM64"  },
+        "i2.4xlarge"  : { "Arch" : "HVM64"  },
+        "i2.8xlarge"  : { "Arch" : "HVM64"  },
+        "d2.xlarge"   : { "Arch" : "HVM64"  },
+        "d2.2xlarge"  : { "Arch" : "HVM64"  },
+        "d2.4xlarge"  : { "Arch" : "HVM64"  },
+        "d2.8xlarge"  : { "Arch" : "HVM64"  },
+        "hi1.4xlarge" : { "Arch" : "HVM64"  },
+        "hs1.8xlarge" : { "Arch" : "HVM64"  },
+        "cr1.8xlarge" : { "Arch" : "HVM64"  },
+        "cc2.8xlarge" : { "Arch" : "HVM64"  }
+        },
+
+        "AWSInstanceType2NATArch" : {
+        "t1.micro"    : { "Arch" : "NATHVM64"  },
+        "t2.nano"     : { "Arch" : "NATHVM64"  },
+        "t2.micro"    : { "Arch" : "NATHVM64"  },
+        "t2.small"    : { "Arch" : "NATHVM64"  },
+        "t2.medium"   : { "Arch" : "NATHVM64"  },
+        "t2.large"    : { "Arch" : "NATHVM64"  },
+        "m1.small"    : { "Arch" : "NATHVM64"  },
+        "m1.medium"   : { "Arch" : "NATHVM64"  },
+        "m1.large"    : { "Arch" : "NATHVM64"  },
+        "m1.xlarge"   : { "Arch" : "NATHVM64"  },
+        "m2.xlarge"   : { "Arch" : "NATHVM64"  },
+        "m2.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "m2.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "m3.medium"   : { "Arch" : "NATHVM64"  },
+        "m3.large"    : { "Arch" : "NATHVM64"  },
+        "m3.xlarge"   : { "Arch" : "NATHVM64"  },
+        "m3.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "m4.large"    : { "Arch" : "NATHVM64"  },
+        "m4.xlarge"   : { "Arch" : "NATHVM64"  },
+        "m4.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "m4.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "m4.10xlarge" : { "Arch" : "NATHVM64"  },
+        "c1.medium"   : { "Arch" : "NATHVM64"  },
+        "c1.xlarge"   : { "Arch" : "NATHVM64"  },
+        "c3.large"    : { "Arch" : "NATHVM64"  },
+        "c3.xlarge"   : { "Arch" : "NATHVM64"  },
+        "c3.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "c3.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "c3.8xlarge"  : { "Arch" : "NATHVM64"  },
+        "c4.large"    : { "Arch" : "NATHVM64"  },
+        "c4.xlarge"   : { "Arch" : "NATHVM64"  },
+        "c4.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "c4.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "c4.8xlarge"  : { "Arch" : "NATHVM64"  },
+        "g2.2xlarge"  : { "Arch" : "NATHVMG2"  },
+        "g2.8xlarge"  : { "Arch" : "NATHVMG2"  },
+        "r3.large"    : { "Arch" : "NATHVM64"  },
+        "r3.xlarge"   : { "Arch" : "NATHVM64"  },
+        "r3.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "r3.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "r3.8xlarge"  : { "Arch" : "NATHVM64"  },
+        "i2.xlarge"   : { "Arch" : "NATHVM64"  },
+        "i2.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "i2.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "i2.8xlarge"  : { "Arch" : "NATHVM64"  },
+        "d2.xlarge"   : { "Arch" : "NATHVM64"  },
+        "d2.2xlarge"  : { "Arch" : "NATHVM64"  },
+        "d2.4xlarge"  : { "Arch" : "NATHVM64"  },
+        "d2.8xlarge"  : { "Arch" : "NATHVM64"  },
+        "hi1.4xlarge" : { "Arch" : "NATHVM64"  },
+        "hs1.8xlarge" : { "Arch" : "NATHVM64"  },
+        "cr1.8xlarge" : { "Arch" : "NATHVM64"  },
+        "cc2.8xlarge" : { "Arch" : "NATHVM64"  }
+        },
+
+        "AWSRegionArch2AMI" : {
+        "af-south-1"       : {"HVM64" : "ami-064cc455f8a1ef504", "HVMG2" : "NOT_SUPPORTED"},
+        "ap-east-1"        : {"HVM64" : "ami-f85b1989", "HVMG2" : "NOT_SUPPORTED"},
+        "ap-northeast-1"   : {"HVM64" : "ami-0b2c2a754d5b4da22", "HVMG2" : "ami-09d0e0e099ecabba2"},
+        "ap-northeast-2"   : {"HVM64" : "ami-0493ab99920f410fc", "HVMG2" : "NOT_SUPPORTED"},
+        "ap-northeast-3"   : {"HVM64" : "ami-01344f6f63a4decc1", "HVMG2" : "NOT_SUPPORTED"},
+        "ap-south-1"       : {"HVM64" : "ami-03cfb5e1fb4fac428", "HVMG2" : "ami-0244c1d42815af84a"},
+        "ap-southeast-1"   : {"HVM64" : "ami-0ba35dc9caf73d1c7", "HVMG2" : "ami-0e46ce0d6a87dc979"},
+        "ap-southeast-2"   : {"HVM64" : "ami-0ae99b503e8694028", "HVMG2" : "ami-0c0ab057a101d8ff2"},
+        "ca-central-1"     : {"HVM64" : "ami-0803e21a2ec22f953", "HVMG2" : "NOT_SUPPORTED"},
+        "cn-north-1"       : {"HVM64" : "ami-07a3f215cc90c889c", "HVMG2" : "NOT_SUPPORTED"},
+        "cn-northwest-1"   : {"HVM64" : "ami-0a3b3b10f714a0ff4", "HVMG2" : "NOT_SUPPORTED"},
+        "eu-central-1"     : {"HVM64" : "ami-0474863011a7d1541", "HVMG2" : "ami-0aa1822e3eb913a11"},
+        "eu-north-1"       : {"HVM64" : "ami-0de4b8910494dba0f", "HVMG2" : "ami-32d55b4c"},
+        "eu-south-1"       : {"HVM64" : "ami-08427144fe9ebdef6", "HVMG2" : "NOT_SUPPORTED"},
+        "eu-west-1"        : {"HVM64" : "ami-015232c01a82b847b", "HVMG2" : "ami-0d5299b1c6112c3c7"},
+        "eu-west-2"        : {"HVM64" : "ami-0765d48d7e15beb93", "HVMG2" : "NOT_SUPPORTED"},
+        "eu-west-3"        : {"HVM64" : "ami-0caf07637eda19d9c", "HVMG2" : "NOT_SUPPORTED"},
+        "me-south-1"       : {"HVM64" : "ami-0744743d80915b497", "HVMG2" : "NOT_SUPPORTED"},
+        "sa-east-1"        : {"HVM64" : "ami-0a52e8a6018e92bb0", "HVMG2" : "NOT_SUPPORTED"},
+        "us-east-1"        : {"HVM64" : "ami-032930428bf1abbff", "HVMG2" : "ami-0aeb704d503081ea6"},
+        "us-east-2"        : {"HVM64" : "ami-027cab9a7bf0155df", "HVMG2" : "NOT_SUPPORTED"},
+        "us-west-1"        : {"HVM64" : "ami-088c153f74339f34c", "HVMG2" : "ami-0a7fc72dc0e51aa77"},
+        "us-west-2"        : {"HVM64" : "ami-01fee56b22f308154", "HVMG2" : "ami-0fe84a5b4563d8f27"}
+        }
+
+    },
+    "Parameters": {
+        "KeyName": {
+            "Description": "Name of an existing EC2 key pair to enable SSH access to the instances",
+            "Type": "AWS::EC2::KeyPair::KeyName",
+            "ConstraintDescription": "Must be the name of an existing EC2 KeyPair.",
+            "MinLength": "1"
+        },
+        "EC2InstanceName": {
+            "Description": "EC2 Instance Name",
+            "Type": "String",
+            "AllowedPattern": "[a-zA-Z0-9_]*",
+            "ConstraintDescription": "Your EC2 instance Name in value for e.g myec2instance"
+        },
+        "InstanceType": {
+            "Description": "EC2 instance type",
+            "Type": "String",
+            "Default": "t2.micro",
+            "AllowedValues": [
+                "t2.micro",
+                "t2.small",
+                "t2.medium",
+                "t2.large",
+                "t2.xlarge",
+                "t2.2xlarge",
+                "m3.medium",
+                "m3.large",
+                "m3.xlarge",
+                "m3.2xlarge",
+                "m4.large",
+                "m4.xlarge",
+                "m4.2xlarge",
+                "m4.4xlarge",
+                "m4.10xlarge",
+                "m4.16xlarge",
+                "c3.large",
+                "c3.xlarge",
+                "c3.2xlarge",
+                "c3.4xlarge",
+                "c3.8xlarge",
+                "c4.large",
+                "c4.xlarge",
+                "c4.2xlarge",
+                "c4.4xlarge",
+                "c4.8xlarge",
+                "d2.xlarge",
+                "d2.2xlarge",
+                "d2.4xlarge",
+                "d2.8xlarge",
+                "g2.2xlarge",
+                "g2.8xlarge",
+                "f1.2xlarge",
+                "f1.16xlarge",
+                "hi1.4xlarge",
+                "hs1.8xlarge",
+                "i2.xlarge",
+                "i2.2xlarge",
+                "i2.4xlarge",
+                "i2.8xlarge",
+                "p2.xlarge",
+                "p2.8xlarge",
+                "p2.16xlarge",
+                "r3.large",
+                "r3.xlarge",
+                "r3.2xlarge",
+                "r3.4xlarge",
+                "r3.8xlarge",
+                "r4.large",
+                "r4.xlarge",
+                "r4.2xlarge",
+                "r4.4xlarge",
+                "r4.8xlarge",
+                "r4.16xlarge",
+                "x1.32xlarge",
+                "x1.16xlarge"
+            ],
+            "ConstraintDescription": "Must be a valid EC2 instance type."
+        },
+        "MySQLUserName": {
+            "Description": "UserName for the RDS.",
+            "Default": "administrator",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "MySQLPassword": {
+            "Description": "Password for the RDS User - Between 8-32 characters; Include at least one digit, upper case letter,lower case letter and no special characters.",
+            "Type": "String",
+            "MinLength": "8",
+            "MaxLength": "32",
+            "AllowedPattern": "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])^([a-zA-Z0-9]{8,20})",
+            "ConstraintDescription": "Your Database Admin Password must be between 8 and 32 characters, include at least one digit, upper case letter and only contain acceptable characters.",
+            "NoEcho": "true"
+        },
+        "RDSInstanceName": {
+            "Description": "RDS Instance Name",
+            "Type": "String",
+            "AllowedPattern": "[a-zA-Z0-9]*",
+            "ConstraintDescription": "Your RDS instance Name in value for e.g mydbinstance"
+        },
+        "DatabaseName": {
+            "Description": "The name of the database inside the instance.",
+            "Type": "String",
+            "AllowedPattern": "[a-zA-Z0-9]*"
+        },
+        "RDSInstanceType": {
+            "Description": "RDS Instance Type",
+            "Default": "db.t2.micro",
+            "Type": "String",
+            "AllowedValues": [
+                "db.t2.micro",
+                "db.t2.small",
+                "db.t2.medium",
+                "db.m1.small",
+                "db.t2.large",
+                "db.m1.medium",
+                "db.m1.large",
+                "db.m1.xlarge",
+                "db.m3.medium",
+                "db.m3.large",
+                "db.m3.xlarge",
+                "db.m3.2xlarge",
+                "db.m2.xlarge",
+                "db.m2.2xlarge",
+                "db.m2.4xlarge",
+                "db.m4.large",
+                "db.m4.xlarge",
+                "db.m4.2xlarge",
+                "db.m4.4xlarge",
+                "db.m4.10xlarge",
+                "db.r3.large",
+                "db.r3.xlarge",
+                "db.r3.2xlarge",
+                "db.r3.4xlarge",
+                "db.r3.8xlarge"
+            ],
+            "ConstraintDescription": "Must be a valid RDS Instance Type."
+        },
+        "DBAllocatedStorage": {
+            "Default": "10",
+            "Description": "The size of the database (Gb)",
+            "Type": "Number",
+            "MinValue": "5",
+            "MaxValue": "3072",
+            "ConstraintDescription": "Must be between 5 and 3072Gb."
+        },
+        "WordPressDomain" : {
+            "Description": "Domain for Wordpress.",
+            "Default": "codibu.com",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "WordPressURL" : {
+            "Description": "URL for Wordpress.",
+            "Default": "http://codibu.com",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "WordPressTitle": {
+            "Description": "Title for Wordpress.",
+            "Default": "Codibu",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "WordPressUserName": {
+            "Description": "UserName for Wordpress.",
+            "Default": "admin",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "WordPressUserPassword": {
+            "Description": "Password for Wordpress.",
+            "Default": "admin",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "WordPressUserEmail": {
+            "Description": "Email for Wordpress.",
+            "Default": "support@codibu.com",
+            "Type": "String",
+            "NoEcho": "false"
+        },
+        "WordPressTheme": {
+            "Description": "Email for Wordpress.",
+            "Type": "String"
+        },
+        "ExtraSQL": {
+            "Description": "SQL File with users.",
+            "Type": "String"
+        },
+        "WpPrefex": {
+            "Description": "SQL prefix",
+            "Type": "String"
+        },
+        "DemoDomain": {
+            "Description": "Demo domain",
+            "Type": "String"
+        },
+        "NetworkURL": {
+            "Description": "Network domain",
+            "Type": "String"
+        }
+    },
+    "Resources": {
+        "EC2": {
+            "Type": "AWS::EC2::Instance",
+            "Metadata": {
+                "AWS::CloudFormation::Init": {
+                    "configSets" : {
+                        "Install" : ["install_wordpress", "configure_wordpress" ]
+                    },
+                    "install_wordpress" : {
+                        "packages" : {
+                            "yum" : {
+                                "httpd24"        : [],
+                                "php73"          : [],
+                                "php73-mysqlnd"  : []
+                            }
+                        },
+                        "files" : {
+                            "/var/tmp/folder-config" : {
+                                "content" : { "Fn::Join" : [ "", [
+                                "#!/bin/bash -xe\n",
+                                "mv /var/www/html/wordpress/* .\n",
+                                "sleep 10\n",
+                                "rm -rf ./wordpress\n",
+                                "\n",
+                                "cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php\n",
+                                "\n",
+                                "chown -R apache /var/www/html\n",
+                                "chown -R ec2-user /var/www/html\n",
+                                "\n",
+                                "bn=\"define('FS_METHOD','direct');\\n\";\n",
+                                "sed -i '2s/^/'\"$bn\"'\\n/' wp-config.php;\n",
+                                "chmod 755 -R /var/www/html\n",
+                                "mkdir /var/www/html/wp-content/uploads\n",
+                                "chmod 755 -R /var/www/html/wp-content/uploads\n",
+                                "\n",
+                                "chown -R ec2-user /var/www/html/wp-content/*\n",
+                                "\n",
+                                "domain=\"<VirtualHost *:80>\\nServerName ",{"Ref": "WordPressDomain"},"\\nServerAlias www.",{"Ref": "WordPressDomain"},"\\n DocumentRoot /var/www/html\\n</VirtualHost>\\n\";\n",
+                                "echo -e \"$domain\\n$(cat /etc/httpd/conf/httpd.conf)\" > /etc/httpd/conf/httpd.conf\n",
+                                "sed -i 's:AllowOverride None:AllowOverride All:g' /etc/httpd/conf/httpd.conf;\n",
+                                "cat > /etc/php-7.3.d/custom.ini << EOF\npost_max_size=1000M\nupload_max_filesize=1000M\nmax_input_vars=6000\nmax_execution_time=600\nEOF\n",
+                                "apachectl restart"
+                                ]]},
+                                "mode" : "000500",
+                                "owner" : "root",
+                                "group" : "root"
+                            },
+                            "/var/tmp/create-wp-config" : {
+                                "content" : { "Fn::Join" : [ "", [
+                                "#!/bin/bash -xe\n",
+                                "sleep 40\n",
+                                "sed -i 's/root/administrator/g' wp-config.php\n",
+                                "sed -i \"s/localhost/",
+                                {
+                                    "Fn::GetAtt": [
+                                        "RDS",
+                                        "Endpoint.Address"
+                                    ]
+                                },
+                                "/g\" wp-config.php\n",
+                                "sed -i \"s/password_here/",
+                                {
+                                    "Ref": "MySQLPassword"
+                                },
+                                "/g\" wp-config.php\n",
+                                "sed -i \"s/database_name_here/",
+                                {
+                                    "Ref": "DatabaseName"
+                                },
+                                "/g\" wp-config.php\n",
+                                "sed -i \"s/username_here/",
+                                {
+                                    "Ref": "MySQLUserName"
+                                },
+                                "/g\" wp-config.php\n",
+                                "sed -i '1n; /\\/* That/i set_time_limit(6000);' wp-config.php\n",
+                                "sleep 20\n",
+                                "cd /home/ec2-user\n",
+                                "curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar\n",
+                                "sleep 5\n",
+                                "sudo chmod 755 wp-cli.phar\n",
+                                "cd /var/www/html\n",
+                                "su ec2-user -c 'php /home/ec2-user/wp-cli.phar core install --url=\"http://", {"Ref": "WordPressURL"}, "\" --title=\"", {"Ref": "WordPressTitle"}, "\" --admin_user=\"", {"Ref": "WordPressUserName"}, "\" --admin_password=\"", {"Ref": "WordPressUserPassword"}, "\" --admin_email=\"", {"Ref": "WordPressUserEmail"}, "\"' \n",
+                                "su ec2-user -c 'php /home/ec2-user/wp-cli.phar theme install \"", {"Ref": "WordPressTheme"}, "\" --activate' \n",
+                                "touch /var/www/html/.htaccess\n",
+                                "chmod -R 777 /var/www/html/.htaccess\n",
+                                "chmod -R 777 /var/www/html/wp-content/themes/"
+                                ]]},
+                                "mode" : "000755",
+                                "owner" : "ec2-user",
+                                "group" : "ec2-user"
+                            }
+                        },
+                        "sources" : {
+                            "/var/www/html" : "http://wordpress.org/latest.tar.gz"
+                        },
+                        "services" : {
+                            "sysvinit" : {
+                                "httpd"  : { "enabled" : "true", "ensureRunning" : "true" }
+                            }
+                        }
+                    },
+                    "configure_wordpress" : {
+                        "commands" : {
+                            "01_configure_permissions" : {
+                                "command" : "/var/tmp/folder-config",
+                                "cwd" : "/var/www/html"
+                            },
+                            "02_configure_wordpress" : {
+                                "command" : "/var/tmp/create-wp-config",
+                                "cwd" : "/var/www/html"
+                            }
+                        }
+                    }
+
+                },
+                "AWS::CloudFormation::Designer": {
+                    "id": "6531a1a1-6ffe-4c30-b0d0-ec5b59dfa6a0"
+                }
+            },
+            "Properties": {
+                "ImageId" : { "Fn::FindInMap" : [ "AWSRegionArch2AMI", { "Ref" : "AWS::Region" }, { "Fn::FindInMap" : [ "AWSInstanceType2Arch", { "Ref" : "InstanceType" }, "Arch" ] } ] },
+                "InstanceType": {
+                    "Ref": "InstanceType"
+                },
+                "KeyName": {
+                    "Ref": "KeyName"
+                },
+                "Monitoring": "false",
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "SecurityGroupInstance"
+                    }
+                ],
+                "UserData" : { "Fn::Base64" : { "Fn::Join" : ["", [
+                    "#!/bin/bash -xe\n",
+                    "yum install -y aws-cfn-bootstrap\n",
+                    "# Install the files and packages from the metadata\n",
+                    "/opt/aws/bin/cfn-init -v ",
+                    "         --stack ", { "Ref" : "AWS::StackName" },
+                    "         --resource EC2 ",
+                    "         --configsets Install ",
+                    "         --region ", { "Ref" : "AWS::Region" }, "\n"
+                ]]}},
+                "Tags": [
+                    {
+                        "Key": "Application",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    },
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Ref": "EC2InstanceName"
+                        }
+                    }
+                ]
+            }
+        },
+        "RDS": {
+            "Type": "AWS::RDS::DBInstance",
+            "DeletionPolicy": "Snapshot",
+            "Properties": {
+                "AllocatedStorage": {
+                    "Ref": "DBAllocatedStorage"
+                },
+                "StorageType": "gp2",
+                "PubliclyAccessible": "true",
+                "AllowMajorVersionUpgrade": "false",
+                "AutoMinorVersionUpgrade": "true",
+                "AvailabilityZone": {
+                    "Fn::Select": [
+                        "0",
+                        {
+                            "Fn::GetAZs": {
+                                "Ref": "AWS::Region"
+                            }
+                        }
+                    ]
+                },
+                "BackupRetentionPeriod": "2",
+                "DBInstanceIdentifier": {
+                    "Ref": "RDSInstanceName"
+                },
+                "DBInstanceClass": {
+                    "Ref": "RDSInstanceType"
+                },
+                "DBName": {
+                    "Ref": "DatabaseName"
+                },
+                "Engine": "MySQL",
+                "EngineVersion": "5.7.22",
+                "MasterUsername": {
+                    "Ref": "MySQLUserName"
+                },
+                "MasterUserPassword": {
+                    "Ref": "MySQLPassword"
+                },
+                "Port": "3306",
+                "PreferredBackupWindow": "00:00-00:30",
+                "PreferredMaintenanceWindow": "sun:16:00-sun:17:30",
+                "Tags": [
+                    {
+                        "Key": "Application",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    }
+                ],
+                "DBSecurityGroups": [
+                    {
+                        "Ref": "DatabaseSecurityGroup"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "1bad120a-2adc-43ea-97d4-aaf5a7012926"
+                }
+            }
+        },
+        "DatabaseSecurityGroup": {
+            "Type": "AWS::RDS::DBSecurityGroup",
+            "Properties": {
+                "GroupDescription"      : "Frontend Access",
+                "DBSecurityGroupIngress": { "EC2SecurityGroupName": { "Ref": "SecurityGroupInstance" } }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "b18afff5-d904-4639-9a0f-2e9c3f70acel"
+                }
+            }
+        },
+        "SecurityGroupInstance": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription": "Security group EC2 Instance",
+                "SecurityGroupIngress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "0.0.0.0/0"
+                    },
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "80",
+                        "ToPort": "80",
+                        "CidrIp": "0.0.0.0/0"
+                    },
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "3306",
+                        "ToPort": "3306",
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Tags": [
+                    {
+                        "Key": "Application",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "d3a3c65e-58fe-4e48-b415-8086908c411a"
+                }
+            }
+        }
+    },
+    "Outputs": {
+        "MantisBTURL": {
+            "Description": "WordPress URL",
+            "Value": {
+                "Fn::Join": [
+                    "",
+                    [
+                        "http://",
+                        {
+                            "Fn::GetAtt": [
+                                "EC2",
+                                "PublicIp"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        }
+    }
+}

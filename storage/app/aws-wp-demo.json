@@ -1,0 +1,59 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "CloudFormation test for lightsail",
+    "Metadata": {
+        "AWS::CloudFormation::Interface": {
+            "ParameterGroups": [
+                {
+                    "Label": {
+                        "default": "Amazon Lightsail Configuration"
+                    },
+                    "Parameters": [
+                        "LightsailInstanceName",
+                        "BundleId"
+                    ]
+                }
+            ],
+            "ParameterLabels": {
+                "LightsailInstanceName": {
+                    "default": "wordpress-1"
+                },
+                "BundleId": {
+                    "default": "micro_2_0"
+                }
+            }
+        }
+    },
+    "Parameters": {
+        "LightsailInstanceName": {
+            "Description": "Lightsail Instance Name",
+            "Type": "String",
+            "AllowedPattern": "[a-zA-Z0-9_-]*",
+            "ConstraintDescription": "Your Lightsail instance Name in value for e.g my LightsailInstanceName instance"
+        },
+        "BundleId": {
+            "Description": "Lightsail instance bundle",
+            "Type": "String",
+            "Default": "micro_2_0",
+            "AllowedValues": [
+                "micro_2_0"
+            ],
+            "ConstraintDescription": "Must be a valid instance bundle"
+        }
+    },
+    "Resources": {
+        "Lightsail": {
+            "Type": "AWS::Lightsail::Instance",
+            "Properties": {
+                "BlueprintId": "wordpress",
+                "BundleId": {
+                    "Ref": "BundleId"
+                },
+                "InstanceName": {
+                    "Ref": "LightsailInstanceName"
+                },
+                "KeyPairName": "cloudFormationKeyPair"
+            }
+        }
+    }
+}

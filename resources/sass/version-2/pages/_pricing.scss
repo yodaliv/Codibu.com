@@ -1,0 +1,204 @@
+.pricing-wrapper {
+   padding : 30px 0 0;
+   @include media-breakpoint-down(lg) {
+      margin-top : 50px;
+   }
+
+   .pricing-heading {
+      margin-bottom : 72px;
+      @include media-breakpoint-down(md) {
+         margin-bottom : 40px;
+      }
+
+      h1 {
+         @include fontStyle(56, 84, 700);
+         color         : rgba(34, 34, 34, 1);
+         margin-bottom : 24px;
+         margin-top    : 16px;
+         @include media-breakpoint-down(lg) {
+            @include fontStyle(46, 64, 700);
+         }
+         @include media-breakpoint-down(md) {
+            @include fontStyle(26, 34, 700);
+         }
+         @include media-breakpoint-down(sm) {
+            @include fontStyle(18, 24, 700);
+         }
+      }
+
+      p {
+         max-width : 858px;
+         margin    : 0 auto;
+
+         @include media-breakpoint-down(md) {
+            font-size : 14px;
+         }
+      }
+   }
+
+   .pricing-table {
+      max-width : 305px;
+      margin    : 0 12px 25px;
+      padding   : 40px 32px;
+      @include media-breakpoint-down(xxl) {
+         max-width : 260px;
+      }
+      @include media-breakpoint-down(lg) {
+         max-width : 296px;
+      }
+      @include media-breakpoint-down(md) {
+         max-width : 245px;
+         padding   : 30px 26px;
+      }
+      @include media-breakpoint-down(sm) {
+         max-width : 290px;
+      }
+
+      &.active-gradient {
+         box-shadow : 6px 8px 16px 0 rgb(0 0 0 / 16%);
+         background : #ffffffed;
+
+         &:before {
+            margin : -2px;
+         }
+      }
+
+      h2 {
+         @include fontStyle(20, 30, 600);
+         margin-bottom : 24px;
+         color         : rgba(0, 0, 0, 0.8);
+         @include media-breakpoint-down(md) {
+            @include fontStyle(16, 24, 600);
+            margin-bottom : 14px;
+         }
+      }
+
+
+      h3 {
+         @include fontStyle(16, 24, 500);
+         margin-bottom : 12px;
+         color         : rgba(0, 0, 0, 1);
+
+         @include media-breakpoint-down(xxl) {
+            font-size : 15px;
+         }
+         @include media-breakpoint-down(md) {
+            font-size     : 13px;
+            margin-bottom : 8px;
+         }
+      }
+
+      h5 {
+         @include fontStyle(16, 21, 500);
+         margin-bottom : 4px;
+         @include media-breakpoint-down(md) {
+            font-size : 14px;
+         }
+      }
+
+      .price {
+         @include fontStyle(38, 57, 600);
+         margin-bottom  : 16px;
+         padding-bottom : 16px;
+         border-bottom  : 2px solid #c4c4c440;
+         @include media-breakpoint-down(md) {
+            @include fontStyle(26, 36, 600);
+            margin-bottom  : 8px;
+            padding-bottom : 8px;
+         }
+
+         sub {
+            @include fontStyle(14, 21, 500);
+         }
+
+      }
+
+      .list {
+         border-bottom  : 2px solid #c4c4c440;
+         margin-bottom  : 24px;
+         padding-bottom : 12px;
+
+         img {
+            margin-right : 15px;
+            width        : 13px;
+         }
+      }
+
+      .bg-sky {
+         margin-top      : 32px;
+         display         : block;
+         text-decoration : none;
+         text-align      : center;
+         line-height     : 52px;
+         height          : 52px;
+         width           : 100%;
+         @include media-breakpoint-down(md) {
+            line-height : 42px;
+            height      : 42px;
+            margin-top  : 22px;
+         }
+      }
+   }
+
+   .payment-method-wrapper {
+      background    : linear-gradient(90deg, rgba(0, 198, 255, 0.05) 3.22%, rgba(0, 114, 255, 0.05) 106.76%);
+      min-height    : 230px;
+      margin-top    : 30px;
+      @include media-breakpoint-down(md) {
+         min-height : auto;
+         padding    : 30px 0;
+      }
+      @media (min-width:430px) and (max-width: 575px){
+         padding-left : 30px;
+      }
+
+      h3 {
+         color         : rgba(0, 0, 0, 1);
+         @include fontStyle(20, 30, 600);
+         margin-bottom : 10px;
+         @include media-breakpoint-down(lg) {
+            font-size : 18px;
+         }
+         @include media-breakpoint-down(sm) {
+            font-size   : 14px;
+            line-height : 20px;
+         }
+      }
+
+      p {
+         @include fontStyle(16, 24, 500);
+         max-width : 435px;
+         @include media-breakpoint-down(lg) {
+            font-size : 14px;
+         }
+         @include media-breakpoint-down(sm) {
+            font-size : 12px;
+            max-width : 330px;
+         }
+      }
+
+      .text {
+         margin-left : 26px;
+      }
+
+      .img {
+         img {
+
+            @include media-breakpoint-down(sm) {
+               width : 40px;
+            }
+
+         }
+      }
+
+      img {
+         @include media-breakpoint-down(lg) {
+            width : 49px;
+         }
+         @include media-breakpoint-down(sm) {
+            width : 40px;
+         }
+      }
+   }
+
+}

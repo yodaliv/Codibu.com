@@ -1,0 +1,184 @@
+.footer-wrapper {
+  //padding             : 96px 0 0;
+  padding             : 50px 0 0;
+  background-image    : url("/images/footer-bg.png");
+  background-size     : cover;
+  background-position : center;
+  background-repeat   : no-repeat;
+  color               : $color-white;
+  position            : relative;
+  z-index             : 1;
+  @include media-breakpoint-down(lg) {
+    padding : 0 0 0;
+  }
+
+
+  &:after {
+    position   : absolute;
+    content    : "";
+    width      : 100%;
+    height     : 100%;
+    top        : 0;
+    left       : 0;
+    background : #000000;
+    opacity: .8;
+    //filter: alpha(opacity=50);
+    z-index    : -1;
+  }
+
+  .footer-top {
+    //padding       : 0 60px 140px;
+    padding       : 0 60px 60px;
+    border-bottom : 1px solid rgba(255, 255, 255, 0.2);
+    @include media-breakpoint-down(lg) {
+      //padding : 80px 114px 60px 114px;
+      padding : 50px 70px 50px;
+    }
+
+    @include media-breakpoint-down(md) {
+      //padding : 60px 0 70px 50px;
+      padding : 50px 0 50px 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding : 40px 20px 0;
+    }
+  }
+
+  .footer-logo {
+    margin-bottom : 30px;
+    @include media-breakpoint-down(md) {
+      margin-bottom : 28px;
+      width : 100px;
+    }
+  }
+
+  p {
+    @include fontStyle(16, 24, 400);
+    margin-bottom : 50px;
+    max-width     : 460px;
+    @include media-breakpoint-down(lg) {
+      max-width     : 505px;
+      margin-bottom : 20px;
+      @include fontStyle(14, 24, 400);
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width     : 422px;
+      @include fontStyle(13, 17, 400);
+      margin-bottom : 26px;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width     : 100%;
+      margin-bottom : 20px;
+      @include fontStyle(12, 20, 400);
+    }
+  }
+
+  .social-icon > a {
+    transition : all .5s;
+
+    &:hover {
+      transform : scale(1.5);
+    }
+
+    &:not(:last-of-type) {
+      margin-right : 30px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      //margin-bottom : 32px;
+      margin-bottom : 20px;
+    }
+    @include media-breakpoint-down(md) {
+      //margin-bottom : 52px;
+    }
+    @include media-breakpoint-down(sm) {
+      //margin-bottom : 20px;
+    }
+  }
+
+
+  .title {
+    @include fontStyle(18, 24, 600);
+    margin-bottom  : 48px;
+    text-transform : uppercase;
+    @include media-breakpoint-down(lg) {
+      @include fontStyle(16, 24, 600);
+      margin-top : 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+      @include fontStyle(14, 24, 600);
+      //margin-top    : 50px;
+      margin-top    : 20px;
+      margin-bottom : 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include fontStyle(11, 18, 600);
+      margin-bottom : 30px;
+      margin-top : 20px;
+    }
+  }
+
+  .list-item {
+    @include media-breakpoint-down(sm) {
+      margin-bottom : 30px;
+    }
+  }
+
+  .list-item > div {
+    @include fontStyle(16, 24, 400);
+    margin-bottom  : 20px;
+    pointer-events : none;
+    @include media-breakpoint-down(lg) {
+      @include fontStyle(14, 24, 400);
+    }
+
+    @include media-breakpoint-down(md) {
+      @include fontStyle(13, 24, 600);
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include fontStyle(10, 14, 400);
+      margin-bottom : 15px;
+    }
+
+    a {
+      text-decoration : none;
+      pointer-events  : auto;
+      color           : $color-white;
+      transition      : all .5s;
+
+      &:hover {
+        text-decoration : underline;
+      }
+    }
+
+    &:last-child {
+      margin-bottom : 0;
+    }
+  }
+
+  .copy-write {
+    @include fontStyle(16, 24, 400);
+    padding : 30px 0;
+    @include media-breakpoint-down(lg) {
+      @include fontStyle(12, 24, 400);
+      padding : 24px 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      @include fontStyle(10, 24, 400);
+      text-align : left !important;
+      padding    : 20px 0 30px 66px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include fontStyle(10, 18, 400);
+      padding    : 18px 0 22px;
+      text-align : center !important;
+    }
+  }
+}
